@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+   
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body class="d-flex">
+
+    <div class="block__left myshadow  col-2 p-0 bg-white z-index-3">
+        <div class="block__left-title px-5 mt-1">
+            <label for="" class="labels_type facult small my-3"></label>
+            <p class="text__title text-center pb-4 mb-2 mt-1">
+                Кафедра компьютерных технологий
+            </p>
+            <p class="text__comment text-center pb-2 m-0">направление подготовки</p>
+            <p class="text__profile-name text-center pb-1 m-0">Информатика и вычислительная техника</p>
+            <p class="text__profile-number text-center pb-4 mb-2">09.03.01</p>
+        </div>
+        <div class="block__left-title-menu menu__left container-fluid">
+            <div id="accordion">
+                <div class="card  card-border card-menu">
+                    <div class="card-header" id="headingCafedra">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton btn-link  hide" data-toggle="collapse"
+                                data-target="#aboutCafedra" aria-expanded="false" aria-controls="aboutCafedra">
+                                О кафедре
+
+                            </button>
+                        </h5>
+                    </div>
+                </div>
+
+
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingApplicant">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton btn-link button-arrow hide" data-toggle="collapse"
+                                data-target="#applicant" aria-expanded="false" aria-controls="applicant">
+                                Абитуриенту
+                                <div class="arrow">
+                                    <span class="arrow__left"></span><span class="arrow__right"></span>
+                                </div>
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="applicant" class="collapse " aria-labelledby="applicant" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="card-body__level2">
+                                <li>
+                                    Как поступить?
+                                </li>
+                                <li>
+                                    Образовательные программы
+                                </li>
+                                <li>
+                                    Спроси студента
+                                </li>
+                                <li>
+                                    Клуб-IT профи
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingNews">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton btn-link " data-toggle="collapse" data-target="#news"
+                                aria-expanded="false" aria-controls="collapseNews">
+                                Новости и объявления
+
+                            </button>
+                        </h5>
+                    </div>
+
+
+                </div>
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingGallery">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton btn-link " data-toggle="collapse" data-target="#gallery"
+                                aria-expanded="false" aria-controls="collapseGallery">
+                                Галерея
+
+                            </button>
+                        </h5>
+                    </div>
+
+
+                </div>
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingStudents">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton btn-link button-arrow hide hide" data-toggle="collapse"
+                                data-target="#collapseStudents" aria-expanded="false" aria-controls="collapseStudents">
+                                Студентам
+                                <div class="arrow">
+                                    <span class="arrow__left"></span><span class="arrow__right"></span>
+                                </div>
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseStudents" class="collapse" aria-labelledby="headingStudents"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="card-body__level2">
+                                <li>
+                                    Учебные материалы
+                                </li>
+                                <li>
+                                    Учебные документы
+                                </li>
+                                <li>
+                                    Расписание занятий и экзаменов
+                                </li>
+                                <li>
+                                    Олимпиады
+                                </li>
+                                <li>
+                                    <div class="card card-noneBorder card-menu d-inline-block">
+                                        <div class="card-header p-0" id="headingStudentsContacts">
+                                            <h5 class="mb-0">
+                                                <button class="btn  btn-link button-arrow hide card-body__level2"
+                                                    data-toggle="collapse" data-target="#collapseStudentsContacts"
+                                                    aria-expanded="false" aria-controls="collapseStudentsContacts">
+                                                    Контакты
+                                                    <div class="arrow ml-3">
+                                                        <span class="arrow__left"></span><span
+                                                            class="arrow__right"></span>
+                                                    </div>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseStudentsContacts" class="collapse"
+                                            aria-labelledby="headingStudentsContacts">
+                                            <div class="card-body p-0">
+                                                <ul class="card-body__level2  card-body__level3">
+                                                    <li>Старосты</li>
+                                                    <li>Профгруппорги</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingTeachers">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton collapseButton btn-link " data-toggle="collapse"
+                                data-target="#collapseTeachers" aria-expanded="false" aria-controls="collapseTeachers">
+                                Преподавателям
+                            </button>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingPostgraduate">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton collapseButton btn-link " data-toggle="collapse"
+                                data-target="#collapsePostgraduate" aria-expanded="false"
+                                aria-controls="collapsePostgraduate">
+                                Аспирантам
+                            </button>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingDoctoral">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton collapseButton btn-link " data-toggle="collapse"
+                                data-target="#collapseDoctoral" aria-expanded="false" aria-controls="collapseDoctoral">
+                                Доктарантам
+                            </button>
+                        </h5>
+                    </div>
+
+                </div>
+
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingLeisure">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton collapseButton btn-link " data-toggle="collapse"
+                                data-target="#collapseLeisure" aria-expanded="false" aria-controls="collapseLeisure">
+                                Досуг
+
+                            </button>
+                        </h5>
+                    </div>
+
+                </div>
+
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingVacancies">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton collapseButton btn-link " data-toggle="collapse"
+                                data-target="#collapseVacancies" aria-expanded="false"
+                                aria-controls="collapseVacancies">
+                                Вакансии
+                            </button>
+                        </h5>
+                    </div>
+
+
+                </div>
+                <div class="card card-border card-menu">
+                    <div class="card-header" id="headingContacts">
+                        <h5 class="mb-0">
+                            <button class="btn collapseButton btn-link " data-toggle="collapse"
+                                data-target="#collapseContacts" aria-expanded="false" aria-controls="collapseContacts">
+                                Контакты
+
+                            </button>
+                        </h5>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <button class="button-up button my-5"></button>
+    </div>
+
+
+    </div>
+    <div class="block__right col-10 p-0 w-100">
+        <div class="block__top bg-white w-100 p-4 myshadow z-index-2">
+            <div class="block__top-find d-inline-block">
+                <div class="input__search-wrapper input input__wrapper">
+                    <input type="text" class="input " placeholder="Поиск по сайту"></div>
+            </div>
+            <div class="block__top-content d-inline-block">
+
+                <div class="block__social d-inline-block px-3">
+                    <a href="#" class="instagram"><img src="resource/icons/instagram.svg" alt=""></a>
+                    <a href="#" class="vk pl-3"><img src="resource/icons/vk.svg" alt=""></a>
+                </div>
+                <div class="text__inform email d-inline-block px-3">
+                    <p class="text__inform-type m-0">email</p>
+                    <p class="text__inform-value m-0"> g.averin@donnu.ru</p>
+                </div>
+                <div class="text__inform number d-inline-block px-3">
+                    <p class="text__inform-type m-0">телефон</p>
+                    <p class="text__inform-value m-0">(062) 30 20 701</p>
+                </div>
+                <div class="text__inform address d-inline-block px-3">
+                    <p class="text__inform-type m-0">адрес</p>
+                    <p class="text__inform-value m-0">г. Донецк, пр.Театральный, 13 (корпус IV, 4 этаж)</p>
+                </div>
+                <button class="button-blue d-inline-block button ml-4">Поступить</button>
+            </div>
+        </div>
+        <div class="block__shortinformation d-flex">
+            <div class="block__shortinformation-news  w-100 ">
+                <div class="news d-flex h-100 pb-4">
+                    <div class="news__item active d-flex w-100">
+                        <img src="resource/images/newsItem.jpg" alt="">
+                        <div class="content  w-100 d-flex">
+                            <div class="mt-auto w-100">
+                                <div class="labels d-flex">
+                                    <label for="" class="labels_type practice mr-2 mb-2"></label>
+                                    <label for="" class="labels_type full-time ml-2 mb-2"></label>
+                                </div>
+                                <div class="title w-75 pt-4">О практике. Очная форма обучения</div>
+                                <div class="comment w-75 py-2">Проверяйте свое место прохождения практики. <br>
+                                    Ознакомьтесь с инструкциями на 7 июня</div>
+                                <div class="inform d-flex pt-4">
+                                    <div class="left">
+                                        <p class="subscribes__count d-inline-block">1</p>
+                                        <p class="docs__count d-inline-block">3</p>
+                                        <p class="teacherName d-inline-block">Бодряга В.Е.</p>
+                                    </div>
+                                    <div class="right ">
+                                        <p> 12.05.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-inline-block pl-4 wrapper">
+                        <div class="news__item mb-4">
+                            <img src="resource/images/newsItem1.jpg" alt="">
+                            <div class="content row align-content-between m-0">
+
+                                <div class="top d-flex justify-content-between w-100">
+                                    <p class="date">21.04.2021</p>
+                                    <div class="labels ">
+                                        <label for="" class="labels_type full-time "></label></div>
+
+                                </div>
+                                <div class="bootom">
+                                    <p class="about">О практике. Очная форма обучения</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__item mb-4">
+                            <img src="resource/images/newsItem2.jpg" alt="">
+                            <div class="content row align-content-between m-0">
+
+                                <div class="top d-flex justify-content-between w-100">
+                                    <p class="date">21.04.2021</p>
+                                    <div class="labels ">
+                                        <label for="" class="labels_type full-time "></label></div>
+
+                                </div>
+                                <div class="bootom">
+                                    <p class="about">О практике. Очная форма обучения</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__item mt-4">
+                            <img src="resource/images/newsItem3.jpg" alt="">
+                            <div class="content row align-content-between m-0">
+
+                                <div class="top d-flex justify-content-between w-100">
+                                    <p class="date">21.04.2021</p>
+                                    <div class="labels ">
+                                        <label for="" class="labels_type full-time "></label></div>
+
+                                </div>
+                                <div class="bootom">
+                                    <p class="about">О практике. Очная форма обучения</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="more w-100 "><span class=" text__profile">Больше новостей </span>
+                    <div class="arrow arrow__rotate ">
+                        <span class="arrow__left"></span><span class="arrow__right"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="block__shortinformation-schedule  bg-white myshadow ">
+                <h2 class="text__title text__title-block">Расписание занятий</h2>
+                <p class="text__currentDay d-inline-block m-0">Среда, &nbsp<span>19.08.2021</span>&nbsp - &nbsp Верхняя
+                    неделя</p>
+                <div class="weekType pl-2 ">
+                    <span class="active up "></span><span class="down"></span>
+                </div>
+                <div class="block__select d-flex pt-4">
+
+                    <div class="col-4 pr-2 pl-0">
+                        <div class="select__wrapper input input__wrapper w-100 m-0 button-arrow hide">
+                            <select size="1" class="input select w-100">
+                                <option selected class="d-none">Курс</option>
+                                <option value="1course">1 курс</option>
+                                <option value="2course">2 курс</option>
+                                <option value="3course">3 курс</option>
+                                <option value="4course">4 курс</option>
+                                <option value="5course">5 курс</option>
+                                <option value="6course">6 курс</option>
+                                <option value="7course">7 курс</option>
+                            </select>
+                            <div class="arrow">
+                                <span class="arrow__left"></span><span class="arrow__right"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pr-2 pl-0">
+                        <div class="select__wrapper input input__wrapper w-100 m-0  button-arrow hide">
+                            <select size="1" class="input select w-100">
+                                <option selected class="d-none">Группа</option>
+                                <option value="1course">1 группа</option>
+                                <option value="2course">2 группа</option>
+                                <option value="3course">3 группа</option>
+                                <option value="4course">4 группа</option>
+                                <option value="5course">5 группа</option>
+                                <option value="6course">6 группа</option>
+                            </select>
+                            <div class="arrow">
+                                <span class="arrow__left"></span><span class="arrow__right"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pr-2 pl-0">
+                        <div class="select__wrapper input input__wrapper w-100 m-0 button-arrow hide">
+                            <select size="1" class="input select w-100" >
+                                <option selected class="d-none">День</option>
+                                <option value="1course">Понедельник</option>
+                                <option value="2course">Вторник</option>
+                                <option value="3course">Среда</option>
+                                <option value="4course">Четверг</option>
+                                <option value="5course">Пятница</option>
+                            </select>
+                            <div class="arrow">
+                                <span class="arrow__left"></span><span class="arrow__right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shedule mt-3">
+                    <div class="shedule__item d-flex ">
+                        <div class="content col-10 d-flex ">
+                            <div class="col-5 lesson p-0">
+                                <div class="lesson__title text__inform-value">Web-программирование</div>
+                                <div class="lesson__type ">лекция</div>
+                                <div class="lesson__time "><span> 08:00 - 09:30</span></div>
+                            </div>
+                            <div class="col-3 audit__number text__comment m-auto text-center">210</div>
+                            <div class="col-4 teacher text__comment m-auto text-center">Гукай А.Е.</div>
+                        </div>
+                        <div class="class col-2 text-center d-flex"><span class="my-auto d-block w-100">1</span></div>
+                    </div>
+                    <div class="shedule__item d-flex ">
+                        <div class="content col-10 d-flex ">
+                            <div class="col-5 lesson p-0">
+                                <div class="lesson__title text__inform-value ">Web-программирование</div>
+                                <div class="lesson__type ">лекция</div>
+                                <div class="lesson__time "><span> 08:00 - 09:30</span></div>
+                            </div>
+                            <div class="col-3 audit__number text__comment m-auto text-center">210</div>
+                            <div class="col-4 teacher text__comment m-auto text-center">Гукай А.Е.</div>
+                        </div>
+                        <div class="class col-2 text-center d-flex"><span class="my-auto d-block w-100">1</span></div>
+                    </div>
+                    <div class="shedule__item d-flex ">
+                        <div class="content col-10 d-flex">
+                            <div class="col-5 lesson p-0">
+                                <div class="lesson__title text__inform-value">Web-программирование</div>
+                                <div class="lesson__type ">лекция</div>
+                                <div class="lesson__time "><span> 08:00 - 09:30</span></div>
+                            </div>
+                            <div class="col-3 audit__number text__comment m-auto text-center">210</div>
+                            <div class="col-4 teacher text__comment m-auto text-center">Гукай А.Е.</div>
+                        </div>
+                        <div class="class col-2 text-center d-flex"><span class="my-auto d-block w-100">1</span></div>
+                    </div>
+                    <div class="shedule__item d-flex ">
+                        <div class="content col-10 d-flex ">
+                            <div class="col-5 lesson p-0">
+                                <div class="lesson__title text__inform-value">Web-программирование</div>
+                                <div class="lesson__type ">лекция</div>
+                                <div class="lesson__time "><span> 08:00 - 09:30</span></div>
+                            </div>
+                            <div class="col-3 audit__number text__comment m-auto text-center">210</div>
+                            <div class="col-4 teacher text__comment m-auto text-center">Гукай А.Е.</div>
+                        </div>
+                        <div class="class col-2 text-center d-flex"><span class="my-auto d-block w-100">1</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block__profile bg-white w-100 myshadow z-index-2">
+            <div class="title d-flex justify-content-between">
+                <p class="text__title-block text__title"> Профили подготовки</p>
+                <a href="#" class="more   "><span class=" text__profile">Узнать больше </span>
+                    <div class="arrow arrow__rotate ">
+                        <span class="arrow__left"></span><span class="arrow__right"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="content row row-cols-2 px-5 mx-4">
+                <div class="profile__item col text-center p-5 position-relative">
+                    <img src="resource/icons/profile_logo.png" alt="" class="profile__items_logo">
+                    <p class="profile__items_title text__inform-value py-4 w-50 m-auto">Программирование
+                        информационных систем
+                    </p>
+                    <p class="profile__items_comment  text__comment">Освоение передовых технологий программирования.
+                        Изучение современных языков программирования. Создание <span> классических</span>,<span>
+                            мобильных</span> и <span>интернет-приложений</span>, разработка приложений с дополненной и
+                        виртуальной реальностью. Программирование контроллеров, роботов, создание умных устройств и
+                        систем.
+                        <br><br>Изучаемые технологии и языки программирования <br> <span> Python, C++, C#, SQL, MySQL,
+                            MS SQL Server, Arduino, TraceMode, Packet Tracer, Java, JavaScript, PHP</span> и др. </p>
+                </div>
+                <div class="profile__item col text-center p-5 position-relative">
+                    <img src="resource/icons/profile_logo.png" alt="" class="profile__items_logo">
+                    <p class="profile__items_title text__inform-value py-4 w-50 m-auto">Информационные
+                        технологии в дизайне
+                    </p>
+                    <p class="profile__items_comment  text__comment">Обучение работе с современными графическими и
+                        мультимедийными системами и различными САПР. Обучение правилам <span>"грамотного"</span>
+                        дизайна. Создание дизайна и интерфейсов сайтов и <span>web-приложений</span>. Работа с графикой,
+                        <span>видеомонтаж</span>, разработка <span>спецэффектов</span>. Анимация, мультимедиа,
+                        <span>2D</span> и <span>3D</span> проектирование объектов и систем, компоненты и обеспечение
+                        САПР.
+
+                        <br><br>Изучаемые технологии и языки программирования <br><span>Python, C++, C#, SQL, MySQL, MS
+                            SQL Server, Packet Tracer, Adobe Photoshop, Adobe Illustrator, 3DMax, Premiere, Adobe After
+                            Effects, Xamarin studio, Unity 3D, Blender 3D </span> и др.
+                    </p>
+                </div>
+                <div class="profile__item col text-center p-5 position-relative">
+                    <img src="resource/icons/profile_logo.png" alt="" class="profile__items_logo">
+                    <p class="profile__items_title text__inform-value py-4 w-50 m-auto">Администрирование информационных
+                        систем
+                    </p>
+                    <p class="profile__items_comment  text__comment">Обеспечение кибер-безопасности. Администрирование
+                        операционных систем. Проектирование и администрирование компьютерных сетей любой сложности.
+                        Обслуживание <span>IT-инфраструктуры</span>. Системы промышленного интернета, технологии
+                        беспроводной связи, АСУ ТП и <span>интернет вещей</span>.
+
+                        <br><br>Изучаемые технологии и языки программирования <br> <span> Python, C++, C#, SQL, MySQL,
+                            MS SQL Server, Windows, Unix, Linux</span> и др.</span> и др. </p>
+                </div>
+                <div class="profile__item col text-center p-5 position-relative">
+                    <img src="resource/icons/profile_logo.png" alt="" class="profile__items_logo">
+                    <p class="profile__items_title text__inform-value py-4 w-50 m-auto">Информационно-аналитические
+                        технологии и системы
+                    </p>
+                    <p class="profile__items_comment  text__comment">Обучение в сфере интеллектуальной аналитики для
+                        работы в прикладных областях ( <span> Data Scientist, Data Analytics</span>). IT-технологии
+                        сбора, обработки и интеллектуального анализа данных; технологии инженерии данных и их системной
+                        интеграции; разработка и моделирование баз данных; средства статистики, машинного обучения и
+                        прогнозирования, технологии аналитики в экономике, управлении, бизнесе и др. прикладных
+                        областях, нейротехнологии, анализ кибер-угроз и т.д.
+                        <br><br>Изучаемые технологии и языки программирования <br> <span> Python, C++, C#, SQL, MySQL,
+                            MS SQL Server, среда R, SAS, Mathlab, Statistica, , Hadoop, Big Data </span> и др. </p>
+                    <label class="labels_type new  labels__new" for=""></label>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex students__connect">
+            <div class="block__askStudent  w-100 ">
+                <div class="askStudent__title w-75 mb-5 pb-4">
+                    <p class="text__title text__title-block mb-2">Спроси студента</p>
+                    <p class="text__comment text__profile ">Интересно, что на самом деле изучают на выбранном
+                        факультете?
+                        Хочешь узнать, чем занимаются студенты помимо пар? Есть вопросы о трудоустройстве? Выбирай
+                        студента из числа наших наставников, нажимай на кнопку <span> «Задать вопрос»</span> и начинай
+                        диалог. Мы всегда готовы к общению!</p>
+                </div>
+                <div class="askStudent__inform d-flex">
+                    <div class="owl-carousel myowl-carousel owl-theme students">
+                        <div class="student__item d-flex pb-4">
+                            <div class="askStudent__inform-img w-50">
+                                <div class="wrapper m-auto">
+                                    <label for="" class="labels_type cplus"></label>
+                                    <label for="" class="labels_type dotnet "></label>
+                                    <label for="" class="labels_type vue "></label>
+                                    <label for="" class="labels_type css"></label>
+                                    <img class="clip-svg image" src="resource/images/studentImage.jpg" alt="">
+
+                                    <svg width="0" height="0" class="form">
+                                        <defs>
+                                            <clipPath id="myClip" clipPathUnits="objectBoundingBox">
+                                                <path
+                                                    d="M0.714,0.009 A0.311,0.285,0,0,0,0.64,0.001 C0.353,0.001,0,0.33,0,0.616 H0 c0,0.066,0.019,0.13,0.062,0.187 c0.083,0.111,0.237,0.183,0.391,0.198 h0.115 c0.063,-0.006,0.123,-0.023,0.174,-0.053 c0.133,-0.076,0.241,-0.206,0.257,-0.4 q0.002,-0.018,0.002,-0.035 v-0.023 C0.996,0.276,0.878,0.046,0.714,0.009">
+                                                </path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="askStudent__inform-comment w-50">
+                                <p class="profile mb-2 text__comment"><span>Программирование информационных
+                                        систем</span></p>
+                                <p class="studentName text__title text__title-block m-0">Заворотнюк Елена</p>
+                                <p class="course text__gray text__profile mb-4 pb-3">3 курс</p>
+                                <p class="title__coment text__gray text__profile mt-3 mb-0">О себе</p>
+                                <p class="text__comment mb-4 mb-0 pr-5 pb-3">Ну знаете, я такая офигенная, знаю кучу
+                                    языков
+                                    программирования. Умею вышивать крестиком и не есть после 6-ти. Хотите узнать как я
+                                    поняла, что программирование - это мое призвание? Как-то у нас не было интернета и
+                                    родители позвали, чтобы это исправить, я перезапустила роутер и родители сказали -
+                                    всё, надо на программиста, сразу видно - талант!
+                                    <br> <br>
+                                    Всем желаю найти свое призвание в этой жизни)</p>
+                                <div class="block__social d-flex mt-3">
+                                    <a href="#" class="instagram"><img src="resource/icons/instagram.svg" alt=""></a>
+                                    <a href="#" class="vk pl-3"><img src="resource/icons/vk.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="student__item d-flex pb-4">
+                            <div class="askStudent__inform-img w-50">
+                                <div class="wrapper m-auto">
+                                    <label for="" class="labels_type cplus"></label>
+                                    <label for="" class="labels_type dotnet "></label>
+                                    <label for="" class="labels_type vue "></label>
+                                    <label for="" class="labels_type css"></label>
+                                    <img class="clip-svg image" src="resource/images/studentImage1.jpg" alt="">
+
+                                    <svg width="0" height="0" class="form">
+                                        <defs>
+                                            <clipPath id="myClip" clipPathUnits="objectBoundingBox">
+                                                <path
+                                                    d="M0.714,0.009 A0.311,0.285,0,0,0,0.64,0.001 C0.353,0.001,0,0.33,0,0.616 H0 c0,0.066,0.019,0.13,0.062,0.187 c0.083,0.111,0.237,0.183,0.391,0.198 h0.115 c0.063,-0.006,0.123,-0.023,0.174,-0.053 c0.133,-0.076,0.241,-0.206,0.257,-0.4 q0.002,-0.018,0.002,-0.035 v-0.023 C0.996,0.276,0.878,0.046,0.714,0.009">
+                                                </path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="askStudent__inform-comment w-50">
+                                <p class="profile mb-2"><span>Программирование информационных систем</span></p>
+                                <p class="studentName text__title text__title-block m-0">Заворотнюк Елена</p>
+                                <p class="course text__gray text__profile mb-4 ">3 курс</p>
+                                <p class="title__coment text__gray text__profile mt-3 mb-0">О себе</p>
+                                <p class="text__comment mb-4 pr-5 pb-3">Ну знаете, я такая офигенная, знаю кучу языков
+                                    программирования. Умею вышивать крестиком и не есть после 6-ти. Хотите узнать как я
+                                    поняла, что программирование - это мое призвание? Как-то у нас не было интернета и
+                                    родители позвали, чтобы это исправить, я перезапустила роутер и родители сказали -
+                                    всё, надо на программиста, сразу видно - талант!
+                                    <br> <br>
+                                    Всем желаю найти свое призвание в этой жизни)</p>
+                                <div class="block__social d-flex mt-3">
+                                    <a href="#" class="instagram"><img src="resource/icons/instagram.svg" alt=""></a>
+                                    <a href="#" class="vk pl-3"><img src="resource/icons/vk.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="student__item d-flex pb-4">
+                            <div class="askStudent__inform-img w-50">
+                                <div class="wrapper m-auto">
+                                    <label for="" class="labels_type cplus"></label>
+                                    <label for="" class="labels_type dotnet "></label>
+                                    <label for="" class="labels_type vue "></label>
+                                    <label for="" class="labels_type css"></label>
+                                    <img class="clip-svg image" src="resource/images/studentImage2.jpg" alt="">
+
+                                    <svg width="0" height="0" class="form">
+                                        <defs>
+                                            <clipPath id="myClip" clipPathUnits="objectBoundingBox">
+                                                <path
+                                                    d="M0.714,0.009 A0.311,0.285,0,0,0,0.64,0.001 C0.353,0.001,0,0.33,0,0.616 H0 c0,0.066,0.019,0.13,0.062,0.187 c0.083,0.111,0.237,0.183,0.391,0.198 h0.115 c0.063,-0.006,0.123,-0.023,0.174,-0.053 c0.133,-0.076,0.241,-0.206,0.257,-0.4 q0.002,-0.018,0.002,-0.035 v-0.023 C0.996,0.276,0.878,0.046,0.714,0.009">
+                                                </path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="askStudent__inform-comment w-50">
+                                <p class="profile mb-2"><span>Программирование информационных систем</span></p>
+                                <p class="studentName text__title text__title-block m-0">Заворотнюк Елена</p>
+                                <p class="course text__gray text__profile mb-4 ">3 курс</p>
+                                <p class="title__coment text__gray text__profile mt-3 mb-0">О себе</p>
+                                <p class="text__comment mb-4 pr-5 pb-3">Ну знаете, я такая офигенная, знаю кучу языков
+                                    программирования. Умею вышивать крестиком и не есть после 6-ти. Хотите узнать как я
+                                    поняла, что программирование - это мое призвание? Как-то у нас не было интернета и
+                                    родители позвали, чтобы это исправить, я перезапустила роутер и родители сказали -
+                                    всё, надо на программиста, сразу видно - талант!
+                                    <br> <br>
+                                    Всем желаю найти свое призвание в этой жизни)</p>
+                                <div class="block__social d-flex mt-3">
+                                    <a href="#" class="instagram"><img src="resource/icons/instagram.svg" alt=""></a>
+                                    <a href="#" class="vk pl-3"><img src="resource/icons/vk.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="student__item d-flex pb-4">
+                            <div class="askStudent__inform-img w-50">
+                                <div class="wrapper m-auto">
+                                    <label for="" class="labels_type cplus"></label>
+                                    <label for="" class="labels_type dotnet "></label>
+                                    <label for="" class="labels_type vue "></label>
+                                    <label for="" class="labels_type css"></label>
+                                    <img class="clip-svg image" src="resource/images/studentImage3.jpg" alt="">
+
+                                    <svg width="0" height="0" class="form">
+                                        <defs>
+                                            <clipPath id="myClip" clipPathUnits="objectBoundingBox">
+                                                <path
+                                                    d="M0.714,0.009 A0.311,0.285,0,0,0,0.64,0.001 C0.353,0.001,0,0.33,0,0.616 H0 c0,0.066,0.019,0.13,0.062,0.187 c0.083,0.111,0.237,0.183,0.391,0.198 h0.115 c0.063,-0.006,0.123,-0.023,0.174,-0.053 c0.133,-0.076,0.241,-0.206,0.257,-0.4 q0.002,-0.018,0.002,-0.035 v-0.023 C0.996,0.276,0.878,0.046,0.714,0.009">
+                                                </path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="askStudent__inform-comment w-50">
+                                <p class="profile mb-2"><span>Программирование информационных систем</span></p>
+                                <p class="studentName text__title text__title-block m-0">Заворотнюк Елена</p>
+                                <p class="course text__gray text__profile mb-4 ">3 курс</p>
+                                <p class="title__coment text__gray text__profile mt-3 mb-0">О себе</p>
+                                <p class="text__comment mb-4 pr-5 pb-3">Ну знаете, я такая офигенная, знаю кучу языков
+                                    программирования. Умею вышивать крестиком и не есть после 6-ти. Хотите узнать как я
+                                    поняла, что программирование - это мое призвание? Как-то у нас не было интернета и
+                                    родители позвали, чтобы это исправить, я перезапустила роутер и родители сказали -
+                                    всё, надо на программиста, сразу видно - талант!
+                                    <br> <br>
+                                    Всем желаю найти свое призвание в этой жизни)</p>
+                                <div class="block__social d-flex mt-3">
+                                    <a href="#" class="instagram"><img src="resource/icons/instagram.svg" alt=""></a>
+                                    <a href="#" class="vk pl-3"><img src="resource/icons/vk.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="student__item d-flex pb-4">
+                            <div class="askStudent__inform-img w-50">
+                                <div class="wrapper m-auto">
+                                    <label for="" class="labels_type cplus"></label>
+                                    <label for="" class="labels_type dotnet "></label>
+                                    <label for="" class="labels_type vue "></label>
+                                    <label for="" class="labels_type css"></label>
+                                    <img class="clip-svg image" src="resource/images/studentImage4.jpg" alt="">
+
+                                    <svg width="0" height="0" class="form">
+                                        <defs>
+                                            <clipPath id="myClip" clipPathUnits="objectBoundingBox">
+                                                <path
+                                                    d="M0.714,0.009 A0.311,0.285,0,0,0,0.64,0.001 C0.353,0.001,0,0.33,0,0.616 H0 c0,0.066,0.019,0.13,0.062,0.187 c0.083,0.111,0.237,0.183,0.391,0.198 h0.115 c0.063,-0.006,0.123,-0.023,0.174,-0.053 c0.133,-0.076,0.241,-0.206,0.257,-0.4 q0.002,-0.018,0.002,-0.035 v-0.023 C0.996,0.276,0.878,0.046,0.714,0.009">
+                                                </path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="askStudent__inform-comment w-50">
+                                <p class="profile mb-2"><span>Программирование информационных систем</span></p>
+                                <p class="studentName text__title text__title-block m-0">Заворотнюк Елена</p>
+                                <p class="course text__gray text__profile mb-4 ">3 курс</p>
+                                <p class="title__coment text__gray text__profile mt-3 mb-0">О себе</p>
+                                <p class="text__comment mb-4 pr-5 pb-3">Ну знаете, я такая офигенная, знаю кучу языков
+                                    программирования. Умею вышивать крестиком и не есть после 6-ти. Хотите узнать как я
+                                    поняла, что программирование - это мое призвание? Как-то у нас не было интернета и
+                                    родители позвали, чтобы это исправить, я перезапустила роутер и родители сказали -
+                                    всё, надо на программиста, сразу видно - талант!
+                                    <br> <br>
+                                    Всем желаю найти свое призвание в этой жизни)</p>
+                                <div class="block__social d-flex mt-3">
+                                    <a href="#" class="instagram"><img src="resource/icons/instagram.svg" alt=""></a>
+                                    <a href="#" class="vk pl-3"><img src="resource/icons/vk.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="askStudent__message pt-4 mt-3 pb-5 mb-3">
+                    <p class="text__title text__title-block text-center mb-1">Ваш вопрос</p>
+                    <textarea class="input input__wrapper w-100 my-3" placeholder="Текст вопроса"></textarea>
+                    <button class="button-blue d-block ml-auto mr-0 button mt-1">Задать вопрос</button>
+                </div>
+
+            </div>
+            <div class="block__shortinformation-itClub itClub bg-white myshadow ">
+
+                <div class="title d-flex justify-content-between">
+                    <p class="text__title-block text__title pb-2 m-0"> IT-клуб</p>
+                    <a href="#" class="more   "><span class=" text__profile">Узнать больше </span>
+                        <div class="arrow arrow__rotate ">
+                            <span class="arrow__left"></span><span class="arrow__right"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="itClub__item pt-4 d-flex flex-column">
+
+                    <p class="itClub__item-date m-0 pb-2"><span>12.05.2021</span></p>
+                    <p class="itClub__item-head text__title text__profile m-0 pb-2">Ув. будущие специалисты!</p>
+                    <p class="itClub__item-comment text__comment m-0  ">Ув. будущие специалисты!
+                        В связи с погодными условиями наша встреча переносится. <span> ❄❄❄❄</span>🙄
+                        Дата мероприятия будет объявлена позже. Берегите себя!
+                        Коллектив преподавателей кафедры КТ</p>
+                    <div class="itClub__item-bottom d-flex justify-content-between pt-4">
+                        <div class="left">
+                            <p class="subscribes__count d-inline-block text__gray">1</p>
+                            <p class="docs__count d-inline-block text__gray">3</p>
+                        </div>
+                        <a href="#" class="more  right "><span class=" text__profile">Перейти к записи </span>
+                            <div class="arrow arrow__rotate ">
+                                <span class="arrow__left"></span><span class="arrow__right"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itClub__item pt-4 d-flex flex-column">
+                    <div class="img">
+                        <img src="resource/images/newsItem4.jpg" alt=""></div>
+                    <p class="itClub__item-date m-0 pb-2"><span>12.05.2021</span></p>
+                    <p class="itClub__item-head text__title text__profile m-0 pb-2">Ув. будущие специалисты!</p>
+                    <p class="itClub__item-comment text__comment m-0  ">Ув. будущие специалисты!
+                        В связи с погодными условиями наша встреча переносится. <span> ❄❄❄❄</span>🙄
+                        Дата мероприятия будет объявлена позже. Берегите себя!
+                        Коллектив преподавателей кафедры КТ</p>
+                    <div class="itClub__item-bottom d-flex justify-content-between pt-4">
+                        <div class="left">
+                            <p class="subscribes__count d-inline-block text__gray">1</p>
+                            <p class="docs__count d-inline-block text__gray">3</p>
+                        </div>
+                        <a href="#" class="more  right "><span class=" text__profile">Перейти к записи </span>
+                            <div class="arrow arrow__rotate ">
+                                <span class="arrow__left"></span><span class="arrow__right"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itClub__item pt-4 d-flex flex-column">
+
+                    <p class="itClub__item-date m-0 pb-2"><span>12.05.2021</span></p>
+                    <p class="itClub__item-head text__title text__profile m-0 pb-2">Ув. будущие специалисты!</p>
+                    <p class="itClub__item-comment text__comment m-0  ">Ув. будущие специалисты!
+                        В связи с погодными условиями наша встреча переносится. <span> ❄❄❄❄</span>🙄
+                        Дата мероприятия будет объявлена позже. Берегите себя!
+                        Коллектив преподавателей кафедры КТ</p>
+                    <div class="itClub__item-bottom d-flex justify-content-between pt-4">
+                        <div class="left">
+                            <p class="subscribes__count d-inline-block text__gray">1</p>
+                            <p class="docs__count d-inline-block text__gray">3</p>
+                        </div>
+                        <a href="#" class="more  right "><span class=" text__profile">Перейти к записи </span>
+                            <div class="arrow arrow__rotate ">
+                                <span class="arrow__left"></span><span class="arrow__right"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="gallery__wrapper">
+            <div class="block__gallery z-index-2 gallery shadow">
+                <div class="gallery__title d-flex justify-content-between">
+                    <p class="text__title-block text__title"> Галерея</p>
+                    <a href="#" class="more   "><span class=" text__profile">Вся галерея </span>
+                        <div class="arrow arrow__rotate ">
+                            <span class="arrow__left"></span><span class="arrow__right"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="owl-carousel myowl-carousel owl-theme owl-threeItems">
+                    <div class="item large">
+                        <div class="gallery__item news__item active d-flex w-100 ">
+                            <img src="resource/images/newsItem.jpg" alt="">
+                            <div class="content  w-100 d-flex">
+                                <div class="mt-auto w-100">
+                                    <div class="labels d-flex">
+                                        <label for="" class="labels_type image large "></label>
+                                    </div>
+                                    <div class="title w-75 pt-4">О практике. Очная форма обучения</div>
+                                    <div class="comment d-flex justify-content-between">
+                                        <p class="text">Проверяйте свое место прохождения практики. <br>
+                                            Ознакомьтесь с инструкциями на 7 июня</p>
+                                        <p class=" date"> 12.05.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="gallery__item news__item active d-flex w-100 ">
+                            <img src="resource/images/newsItem.jpg" alt="">
+                            <div class="content  w-100 d-flex">
+                                <div class="mt-auto w-100">
+                                    <div class="labels d-flex">
+                                        <label for="" class="labels_type video small mr-2 mb-2"></label>
+                                    </div>
+                                    <div class="title w-75 pt-4">О практике. Очная форма обучения</div>
+                                    <div class="comment d-flex justify-content-between">
+                                        <p class="d-none comment">Проверяйте свое место прохождения практики. <br>
+                                            Ознакомьтесь с инструкциями на 7 июня</p>
+                                        <p class=" date"> 12.05.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__item news__item active d-flex w-100 ">
+                            <img src="resource/images/newsItem.jpg" alt="">
+                            <div class="content  w-100 d-flex">
+                                <div class="mt-auto w-100">
+                                    <div class="labels d-flex">
+                                        <label for="" class="labels_type image small mr-2 mb-2"></label>
+                                    </div>
+                                    <div class="title w-75 pt-4">О практике. Очная форма обучения</div>
+                                    <div class="comment d-flex justify-content-between">
+                                        <p class="d-none comment">Проверяйте свое место прохождения практики. <br>
+                                            Ознакомьтесь с инструкциями на 7 июня</p>
+                                        <p class=" date"> 12.05.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item large">
+                        <div class="gallery__item news__item active d-flex w-100 ">
+                            <img src="resource/images/newsItem.jpg" alt="">
+                            <div class="content  w-100 d-flex">
+                                <div class="mt-auto w-100">
+                                    <div class="labels d-flex">
+                                        <label for="" class="labels_type image large "></label>
+                                    </div>
+                                    <div class="title w-75 pt-4">О практике. Очная форма обучения</div>
+                                    <div class="comment d-flex justify-content-between">
+                                        <p class="text">Проверяйте свое место прохождения практики. <br>
+                                            Ознакомьтесь с инструкциями на 7 июня</p>
+                                        <p class=" date"> 12.05.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item large">
+                        <div class="gallery__item news__item active d-flex w-100 ">
+                            <img src="resource/images/newsItem.jpg" alt="">
+                            <div class="content  w-100 d-flex">
+                                <div class="mt-auto w-100">
+                                    <div class="labels d-flex">
+                                        <label for="" class="labels_type image large "></label>
+                                    </div>
+                                    <div class="title w-75 pt-4">О практике. Очная форма обучения</div>
+                                    <div class="comment d-flex justify-content-between">
+                                        <p class="text">Проверяйте свое место прохождения практики. <br>
+                                            Ознакомьтесь с инструкциями на 7 июня</p>
+                                        <p class=" date"> 12.05.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer block__footer z-index-2">
+            <div class="footer__top row m-0 pb-4 ">
+                <div class=" inform">
+                    <div class="logo d-flex col-7 p-0 m-0 mb-3">
+                        <div class="col-5 p-0">
+                            <label for="" class="labels_type donnu large  pr-3"></label></div>
+                        <div class="col p-0"><label for="" class="labels_type facult large  "></label></div>
+                    </div>
+                    <p class="title main">Донецкий национальный университет</p>
+                    <a href="#" class="comment address">ул. Университетская, 24, Донецк, 283001, ДНР</a>
+                    <a href="#" class="comment number d-inline-block pr-2">+380 62 302-06-00</a>
+                    <a href="#" class="comment number d-inline-block">+7 863 318-28-57</a>
+                    <p href="#" class="title">Ректор</p>
+                    <a href="#" class="comment email">rector@donnu.ru</a>
+                    <br>
+                    <br>
+                    <p href="#" class="title main">Кафедра компьютерных технологий</p>
+                    <a href="#" class="comment address">г. Донецк, пр.Театральный, 13
+                        (корпус IV, 4 этаж)</a>
+                    <a href="#" class="comment number">(062) 30 20 701</a>
+                    <p href="#" class="title">Заведующий кафедрой</p>
+                    <a href="#" p class="comment zav">доктор технических наук, <br>
+                        профессор Геннадий Викторович Аверин</a>
+                    <p href="#" class="title">Методист кафедры</p>
+                    <a href="#" class="comment metodist">Валентина Борисовна Мирющенко</a>
+                </div>
+                <div class="pt-2">
+                    <p href="#" class="title main">Университет</p>
+                    <a href="#" class="comment">ДонНУ сегодня </a>
+                    <a href="#" class="comment">Все кафедры</a>
+                    <a href="#" class="comment">История университета</a>
+                    <a href="#" class="comment">Правила приема</a>
+                    <a href="#" a class="comment">Контакты приемной ректора</a>
+                    <a href="#" class="comment">Контакты приемной комиссии</a>
+                </div>
+                <div class=" pt-2">
+                    <p href="#" class="title main">Абитуриенту</p>
+                    <a href="#" class="comment">Как поступить? </a>
+                    <a href="#" class="comment">Профили подготовки</a>
+                    <a href="#" class="comment">Спроси студента</a>
+                    <a href="#" class="comment">Клуб “IT-профи”</a>
+                    <a href="#" a class="comment">Программы вступительных
+                        испытаний</a>
+                    <a href="#" class="comment">Расписание вступительных
+                        испытаний</a>
+                </div>
+                <div class=" pt-2">
+                    <p href="#" class="title main">Студенту</p>
+                    <a href="#" class="comment">Учебные документы </a>
+                    <a href="#" class="comment">Учебные материалы</a>
+                    <a href="#" class="comment">Расписание занятий и экзаменов</a>
+                    <a href="#" class="comment">Олимпиады</a>
+                    <a href="#" a class="comment">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__bottom pt-4">
+                <p class="m-0">© Донецкий национальный университет - Кафедра компьютерных технологий</p>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

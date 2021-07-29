@@ -1,0 +1,83 @@
+.select-wrapper {
+  position: relative; }
+  .select-wrapper span.select-label {
+    position: absolute;
+    padding: 0 10px;
+    padding-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D297D;
+    background-color: #fff;
+    top: -15px;
+    left: 15px;
+    z-index: 1010; }
+  .select-wrapper .dropdown {
+    width: 100% !important; }
+    .select-wrapper .dropdown button.dropdown-toggle {
+      background-color: #fff;
+      border-radius: 10px;
+      border: 1px solid #BAC4DF;
+      padding: 16px 25px;
+      font-size: 21px;
+      font-weight: 400;
+      width: -webkit-fill-available;
+      text-align: left;
+      color: #2D297D;
+      transition: .3s;
+      z-index: 1000; }
+      .select-wrapper .dropdown button.dropdown-toggle:active {
+        background-color: #fff;
+        border-color: #6283E5; }
+      .select-wrapper .dropdown button.dropdown-toggle:hover {
+        color: #2D297D;
+        border-color: #6283E5; }
+      .select-wrapper .dropdown button.dropdown-toggle:focus {
+        color: #2D297D;
+        border-color: #6283E5;
+        box-shadow: none;
+        outline: none;
+        outline: 0px auto transparent !important;
+        outline-offset: -2px; }
+      .select-wrapper .dropdown button.dropdown-toggle::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-top: none;
+        border-left: none;
+        border-right: 2px solid #E45868;
+        border-bottom: 2px solid #E45868;
+        transform: rotate(45deg);
+        top: 35%;
+        right: 30px; }
+    .select-wrapper .dropdown-menu {
+      transition: .3s;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1500;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+      padding: 0; }
+      .select-wrapper .dropdown-menu.show {
+        display: block;
+        visibility: visible;
+        opacity: 1; }
+    .select-wrapper .dropdown-item {
+      color: #2D297D;
+      transition: .3s;
+      cursor: pointer;
+      font-size: 21px;
+      padding: 13px 25px; }
+      .select-wrapper .dropdown-item.active {
+        background-color: #6283E5;
+        color: #fff; }
+        .select-wrapper .dropdown-item.active:hover {
+          color: #fff;
+          background-color: #6283E5; }
+      .select-wrapper .dropdown-item:hover {
+        color: #2D297D;
+        background-color: rgba(98, 131, 229, 0.05); }
+      .select-wrapper .dropdown-item:focus {
+        outline: none; }

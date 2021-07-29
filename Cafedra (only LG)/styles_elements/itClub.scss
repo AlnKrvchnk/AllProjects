@@ -1,0 +1,38 @@
+@import '../scss/variables.scss';
+
+.itClub{
+    &__item
+    {
+        .img{
+            img{
+                width: 100%;
+            }
+            border-radius: 5px;
+            width: 100%;
+            max-height: 160px;
+            overflow:hidden;
+            margin-bottom: 20px;
+        }
+        border-bottom: 1px solid rgba(162, 174, 186,0.3);
+&-bottom{
+    .subscribes
+    {
+        &__count{
+&:before{
+    vertical-align: sub;
+    padding-right: 10px;
+    
+    content:url($icon+"subscribes__count-light.svg")
+}
+    }}
+    .docs{
+        &__count{
+            &:before{
+padding-right: 10px;
+    padding-left: 24px;
+            
+            vertical-align: sub;
+            content:url($icon+"docs__count-light.svg")
+        }}
+}}}
+}

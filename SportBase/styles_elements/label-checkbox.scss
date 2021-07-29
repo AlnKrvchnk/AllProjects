@@ -1,0 +1,23 @@
+@import '../scss/variables.scss';
+
+.label-checkbox-wrapp{
+    input[type = checkbox]{
+        display: none;
+    }
+
+    &__label{
+        padding: 0.7em 1.6em;
+        color: $dark-blue;
+        border: 2px solid $border;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 22px;
+        transition: .3s;
+    }
+
+    &__checkbox:checked + .label-checkbox-wrapp__label{
+        color: $textWhite;
+        background-color: $light-blue;
+        border-color: $light-blue;
+    }
+}

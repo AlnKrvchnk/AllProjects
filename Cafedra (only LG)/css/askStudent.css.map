@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../styles_elements/askStudent.scss",
+        "../scss/variables.scss"
+    ],
+    "names": [],
+    "file": "askStudent.css"
+}

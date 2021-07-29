@@ -1,0 +1,68 @@
+.button-arrow.show{
+.arrow{
+    
+&__left{
+    animation-name: arrow__left ;
+}
+&__right{
+    animation-name: arrow__right;
+    }
+    }
+}
+.button-arrow.hide{
+    .arrow{
+    &__left{
+        transform: rotate(-135deg);
+   
+        animation-name: arrow__left-back ;
+        }
+        &__right{
+            transform: rotate(135deg);
+            animation-name: arrow__right-back ;
+            }
+            }}
+        
+    
+
+.arrow{
+    &__rotate{
+        transform: rotate(-90deg);
+        
+    }
+    display: inline-block;
+    width: 14px;
+    span{
+        border-radius: 1px;
+        width: 2px;
+        height: 8px;
+        display: inline-block;
+        background-color: $main;
+        animation:  0.3s ease-out   forwards
+    }
+    &__left{
+transform: rotate(-45deg);
+
+    }
+    &__right{
+        transform: rotate(45deg) ;
+        position: relative;
+    left: 3px;
+    
+    }
+}
+@keyframes arrow__left {
+    to{
+        transform: rotate(-135deg);
+    }
+}
+@keyframes arrow__right {
+    to{transform: rotate(135deg);
+}}
+@keyframes arrow__left-back {
+    to{
+        transform: rotate(-45deg);
+    }
+}
+@keyframes arrow__right-back {
+    to{transform: rotate(45deg);
+}}

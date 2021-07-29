@@ -1,0 +1,55 @@
+.aboutCafedra{
+    
+    .teachers{
+&::before{
+content:"";
+background-repeat: no-repeat;
+background-image: url($icon+"teachersblue.svg");
+background-size: 28px;
+width: 30px;
+height: 30px;
+display: inline-block;
+vertical-align: middle;
+    margin-right: 20px;
+}
+    }
+    .doctors{
+        &::before{
+            content:"";
+            background-repeat: no-repeat;
+            background-image: url($icon+"doctorsblue.svg");
+            background-size: 28px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+                margin-right: 20px;
+            }
+    }
+    .scientist{
+        &::before{
+            content:"";
+            background-repeat: no-repeat;
+            background-image: url($icon+"scientistsblue.svg");
+            background-size: 28px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+                margin-right: 20px;
+            }
+    }
+    .students{
+        &::before{
+            content:"";
+            background-repeat: no-repeat;
+            background-image: url($icon+"studentsblue.svg");
+            background-size: 28px;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+                margin-right: 20px;
+            }
+    }
+}

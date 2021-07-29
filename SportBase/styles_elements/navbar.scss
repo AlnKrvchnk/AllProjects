@@ -1,0 +1,125 @@
+@import '../scss/variables.scss';
+
+nav.navbar{
+    padding: 20px 0; 
+    z-index: 100;
+
+    .container{
+        padding-left: 0;
+      padding-right: 0;
+    }
+}
+
+.navbar{
+
+    background-color: $dark-blue;
+
+    &-brand{
+        margin-right: 50px;
+
+        &__logo{
+            color: #fff;
+            font-family: 'Muller';
+            font-weight: 700;
+            font-size: 22px;
+
+            span{
+                color: $red; 
+            }
+        }
+    }
+
+    & .nav-item{
+        margin-right: 40px;
+    }
+
+    .nav-link{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .wrapp-buttons{
+        display: flex;
+    }
+
+    &-buttons{
+        display: flex;
+    }
+
+    .button, .block-name-company{
+        margin-left: 10px;
+        width: max-content;
+
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+
+    & .navbar-toggler{
+        border: none;
+        color: transparent;
+
+        &:focus{
+            border: none;
+        }
+    }
+
+    & .navbar-toggler-icon{
+        background-image: none;
+        width: 22px;
+        height: 3px;
+        background: #fff;
+        border-radius: 3px;
+        position: relative;
+        transition: .3s;
+        border-radius: 5px;
+
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 3px;
+            border-radius: 3px;
+            background: #fff;
+            transform-origin: center;
+            transition: .3s;
+            left: 0;
+            border-radius: 5px;
+        }
+
+        &::before{
+            top: -8px;
+        }
+        &::after{
+            top: 8px;
+        }
+    }
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
+    height: 0;
+
+    &::before, &::after{
+        top: 0px;
+    }
+    &::before{
+        transform: rotate(45deg);
+    }
+    &::after{
+        transform: rotate(-45deg);
+    }
+}
+
+.navbar-expand-xl .navbar-nav a.nav-link {
+    color: #fff;
+    padding: 10px 0px;
+
+    &:hover{
+        color: #fff;
+    }
+}
+@media(max-width: 768px){
+    .navbar-brand-withoutMarginInSmall{
+        margin:0;
+    }
+}

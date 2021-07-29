@@ -1,0 +1,9 @@
+.aboutCafedra .teachers::before {
+  content: "";
+  background-image: url();
+  background-size: 28px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+/*# sourceMappingURL=aboutCafedra.css.map */

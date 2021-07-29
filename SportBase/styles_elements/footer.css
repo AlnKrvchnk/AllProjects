@@ -1,0 +1,25 @@
+.footer {
+  background-color: #2D297D; }
+  .footer-bottom {
+    background-color: #221E6A; }
+  .footer p {
+    font-size: 18px; }
+  .footer .socialButton__facebook {
+    background: #1976D2;
+    width: 25px;
+    height: 25px; }
+  .footer .socialButton img {
+    width: auto;
+    height: 25px;
+    padding: 0;
+    background: none;
+    margin: auto; }
+
+.span {
+  color: #E45868; }
+
+.opacity-7 {
+  opacity: 70%; }
+
+.opacity-5 {
+  opacity: 50%; }

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <script src="https://kit.fontawesome.com/b388b447e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responce.css">
+    <title>Спортбаза - каталог объектов</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <div class="container px-4 px-lg-0">
+                <a class="navbar-brand" href="#">
+                    <div class="navbar-brand__logo">СПОРТБАЗА<span>.РФ</span></div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseDataMenu"
+                    aria-controls="collapseDataMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-between pb-3 pb-xl-0" id="collapseDataMenu">
+                    <ul class="navbar-nav nav m-4 mx-lg-0 m-xl-0">
+                        <li class="nav-item is-active"><a class="nav-link" href="#">Каталог объектов 124</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Тендеры</a></li>
+                        <span class="nav-indicator"></span>
+                    </ul>
+                    <div class="navbar-buttons m-4 m-lg-0">
+                        <div class="wrapp-buttons">
+                            <button type="button" class="button button-icon">
+                                <svg data-name="Сгруппировать 7060" xmlns="http://www.w3.org/2000/svg" width="21.412"
+                                    height="19.897" viewBox="0 0 21.412 19.897">
+                                    <path id="Контур_44609" data-name="Контур 44609"
+                                        d="M19.661,18.767a5.851,5.851,0,0,0-8.575,0l-.378.4-.378-.4a5.855,5.855,0,0,0-8.274-.3q-.157.146-.3.3a6.567,6.567,0,0,0,0,8.929l8.4,8.859a.765.765,0,0,0,1.082.029l.029-.029,8.4-8.859A6.566,6.566,0,0,0,19.661,18.767Zm-1.107,7.874h0l-7.845,8.275L2.862,26.641a5.018,5.018,0,0,1,0-6.822,4.325,4.325,0,0,1,6.112-.246q.128.118.246.246l.933.984a.788.788,0,0,0,1.111,0l.933-.983a4.325,4.325,0,0,1,6.112-.246q.128.118.246.246A4.972,4.972,0,0,1,18.554,26.641Z"
+                                        transform="translate(0 -16.896)" fill="#fff" />
+                                </svg>
+                            </button>
+                            <button type="button" class="button">Заявка на тендер</button>
+                        </div>
+                        <button type="button" class="button button-fill">Войти</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="head-block pb-3 pb-lg-5">
+            <div class="container px-1">
+                <h1 class="head-block__title mx-auto mb-4 fs-1">Каталог спортивных объектов</h1>
+                <a href="#" class="button button-fill mx-auto">
+                    <p class="fs-3 me-2 me-lg-4">Заявка на проведение тендера</p>
+                    <div class="wrapp-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56.009" height="56.009" viewBox="0 0 56.009 56.009"><path d="M27.052,0H9.184V3.3H0V56.009H36.237V3.3H27.052ZM12.466,3.282h11.3V6.591h-11.3Zm20.488,3.3v46.15H3.282V6.577h5.9v3.3H27.052v-3.3Z" transform="translate(0)" fill="#e45868"/><path d="M75.25,180.75h3.3v3.282h-3.3Z" transform="translate(-67.018 -160.977)" fill="#e45868"/><path d="M135.5,180.75h13.182v3.282H135.5Z" transform="translate(-120.677 -160.977)" fill="#e45868"/><path d="M75.25,241h3.3v3.282h-3.3Z" transform="translate(-67.018 -214.636)" fill="#e45868"/><path d="M135.5,241h13.182v3.282H135.5Z" transform="translate(-120.677 -214.636)" fill="#e45868"/><path d="M75.25,301.25h3.3v3.282h-3.3Z" transform="translate(-67.018 -268.295)" fill="#e45868"/><path d="M135.5,301.25h13.182v3.282H135.5Z" transform="translate(-120.677 -268.295)" fill="#e45868"/><path d="M75.25,361.5h3.3v3.282h-3.3Z" transform="translate(-67.018 -321.954)" fill="#e45868"/><path d="M135.5,361.5h13.182v3.282H135.5Z" transform="translate(-120.677 -321.954)" fill="#e45868"/><path d="M371.373,6.591V3.3h-3.3V0H364.8V3.3h-3.3V48.338a4.944,4.944,0,0,0,3.3,4.655v3.016h3.282V52.993a4.944,4.944,0,0,0,3.3-4.655V9.873h3.309V21.414h3.282V6.591Zm-3.282-.014v6.6h-3.309v-6.6Zm0,9.886v3.309h-3.309V16.464Zm-1.655,33.529a1.656,1.656,0,0,1-1.655-1.655V23.055h3.309V48.338A1.656,1.656,0,0,1,366.436,49.993Z" transform="translate(-321.954)" fill="#e45868"/>
+                        </svg>
+                    </div>
+                </a>
+                <h3 class="head-block__subtitle mx-auto mt-4 fs-4 p-4 p-lg-0">
+                    Если в каталоге нет подходящего объекта - вы можете оставить заявку на проведение тендера
+                </h3>
+            </div>
+            
+        </div>
+    </header>
+
+    <section class="objects-content">
+        <div class="container p-0">
+            <div class="row">
+                <!-- ASIDE -->
+                <aside class="filters col-12 col-xl-3 p-4 p-xl-3 pe-xl-5 pb-xl-5">
+                    <div class="search-block d-flex flex-column flex-column-reverse flex-lg-row flex-lg-row-reverse flex-xl-column pb-0 pb-xl-1">
+                        <div class="wrapper-filter d-flex flex-row flex-row-reverse flex-xl-column my-2 me-0 me-xl-0 mt-xl-0">
+                            <div class="filter-button label-checkbox-wrapp d-block d-xl-none me-0 ms-3 ms-lg-0" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input class="filter-button__checkbox " type="checkbox" name="nutrition-type" id="nutrition-none" checked> 
+                                <label class="filter-button__label d-flex justify-content-center align-items-center" for="nutrition-none">
+                                    <img class="filter-button__icon" src="./resources/icons/filter-icon.svg" alt="filter-icon">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="search-wrapper w-100 my-2 me-3 mb-xl-2">
+                            <input class="input-search" type="search" name="search-object" id="search-object" placeholder="Поиск по тендерам">
+                            <img class="icon" src="./resources/icons/search-icon.svg" alt="search-icon">
+                        </div>
+                        <div class="available-objects-block w-100 my-2 mb-xl-3 me-3">
+                            <div class="available-objects-block__label">Доступные объекты</div>
+                            <div class="available-objects-block__count">4225</div>
+                        </div>
+                    </div>
+                    <div id="collapseExample" class="collapse show filters-block pt-3 ">
+                        <div class="sport-type filters-block__item py-3">
+                            <div class="sport-type-select select-wrapper">
+                                <span class="select-label">Вид спорта</span>
+                                <select class="selectpicker" title="Выберите вид спорта">
+                                    <option>Вид спорта - 1</option>
+                                    <option>Вид спорта - 2</option>
+                                    <option>Вид спорта - 3</option>
+                                </select>
+                            </div>
+                            <div class="sport-type-list mt-3">
+                                <div class="sport-type-list__item">Футбол<span></span></div>
+                                <div class="sport-type-list__item">Хоккей<span></span></div>
+                            </div>
+                        </div>
+
+                        <div class="infrastucture accordion filters-block__item py-3" id="accordionInfrastucture">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingInfrastucture">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfrastucture" aria-expanded="true" aria-controls="collapseInfrastucture">
+                                    Инфраструктура
+                                </button>
+                                </h2>
+                                <div id="collapseInfrastucture" class="accordion-collapse collapse show" aria-labelledby="headingInfrastucture" data-bs-parent="#accordionInfrastucture">
+                                    <div class="accordion-body infrastucture-list">
+                                        <div class="label-checkbox-wrapp infrastucture-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-infrastucture" id="open-platform-infrastucture" checked> 
+                                            <label class="label-checkbox-wrapp__label" for="open-platform-infrastucture">Открытая площадка ОФП</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp infrastucture-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-infrastucture" id="treadmills-infrastucture"> 
+                                            <label class="label-checkbox-wrapp__label" for="treadmills-infrastucture">Беговые дорожки</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp infrastucture-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-infrastucture" id="pool-infrastucture"> 
+                                            <label class="label-checkbox-wrapp__label" for="pool-infrastucture">Бассейн</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp infrastucture-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-infrastucture" id="natural-field-infrastucture" checked> 
+                                            <label class="label-checkbox-wrapp__label" for="natural-field-infrastucture">Натуральное футбольное поле</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp infrastucture-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-infrastucture" id="close-platform-infrastucture"> 
+                                            <label class="label-checkbox-wrapp__label" for="close-platform-infrastucture">Крытая площадка ОФП</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp infrastucture-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-infrastucture" id="gym-infrastucture"> 
+                                            <label class="label-checkbox-wrapp__label" for="gym-infrastucture">Тренажерный зал</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp infrastucture-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-infrastucture" id="mini-football-infrastucture"> 
+                                            <label class="label-checkbox-wrapp__label" for="mini-football-infrastucture">Мини-футбол</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp infrastucture-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-infrastucture" id="stadion-fifa-infrastucture"> 
+                                            <label class="label-checkbox-wrapp__label" for="stadion-fifa-infrastucture">Футбольный стадион Fifa</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp infrastucture-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-infrastucture" id="artificial-field-infrastucture"> 
+                                            <label class="label-checkbox-wrapp__label" for="artificial-field-infrastucture">Искусственное футбольное поле</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="region-objects filters-block__item py-3">
+                            <div class="select-wrapper mt-2">
+                                <span class="select-label">Регион объекта</span>
+                                <select class="selectpicker" title="Выберите регион объекта">
+                                    <option>Регион - 1</option>
+                                    <option>Регион - 2</option>
+                                    <option>Регион - 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="nutrition accordion filters-block__item py-3" id="accordionNutrition">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNutrition">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNutrition" aria-expanded="true" aria-controls="collapseNutrition">
+                                    Предоставляемое питание
+                                </button>
+                                </h2>
+                                <div id="collapseNutrition" class="accordion-collapse collapse show" aria-labelledby="headingNutrition" data-bs-parent="#accordionNutrition">
+                                    <div class="accordion-body nutrition-list">
+                                        <div class="label-radio-wrapp nutrition-list__item">
+                                            <input class="label-radio-wrapp__radio" type="radio" name="nutrition-type" id="nutrition-none" checked> 
+                                            <label class="label-radio-wrapp__label" for="nutrition-none">Без питания</label>
+                                        </div>
+                                        <div class="label-radio-wrapp nutrition-list__item">
+                                            <input class="label-radio-wrapp__radio" type="radio" name="nutrition-type" id="nutrition-complex"> 
+                                            <label class="label-radio-wrapp__label" for="nutrition-complex">Комплексное</label>
+                                        </div>
+                                        <div class="label-radio-wrapp nutrition-list__item">
+                                            <input class="label-radio-wrapp__radio" type="radio" name="nutrition-type" id="nutrition-all"> 
+                                            <label class="label-radio-wrapp__label" for="nutrition-all">Шведский стол</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services accordion filters-block__item py-3" id="accordionServices">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingServices">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServices" aria-expanded="true" aria-controls="collapseServices">
+                                    Предоставляемые услуги
+                                </button>
+                                </h2>
+                                <div id="collapseServices" class="accordion-collapse collapse show" aria-labelledby="headingServices" data-bs-parent="#accordionServices">
+                                    <div class="accordion-body services-list">
+                                        <div class="label-checkbox-wrapp services-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-services" id="transfers-services" checked> 
+                                            <label class="label-checkbox-wrapp__label" for="transfers-services">Трансферы</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp services-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-services" id="excursion-services"> 
+                                            <label class="label-checkbox-wrapp__label" for="excursion-services">Экскурсионная программа</label>
+                                        </div>
+                                        <div class="label-checkbox-wrapp services-list__item">
+                                            <input class="label-checkbox-wrapp__checkbox" type="checkbox" name="checkbox-services" id="entertainment-services"> 
+                                            <label class="label-checkbox-wrapp__label" for="entertainment-services">Развлекательная программа</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cost accordion filters-block__item py-3" id="accordionCost">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCost">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCost" aria-expanded="true" aria-controls="collapseCost">
+                                    Стоимость за человека
+                                </button>
+                                </h2>
+                                <div id="collapseCost" class="accordion-collapse collapse show" aria-labelledby="headingCost" data-bs-parent="#accordionCost">
+                                    <div class="accordion-body">
+                                        <div class="cost-fields">
+                                            <input class="cost-fields__input cost-fields__item" type="text" name="initial-сost" id="initial-сost" value="1000">
+                                            <span class="cost-fields__label cost-fields__item">-</span>
+                                            <input class="cost-fields__input cost-fields__item" type="text" name="final-сost" id="final-сost" value="8000">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accreditation accordion filters-block__item py-3" id="accordionАccreditation">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingАccreditation">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseАccreditation" aria-expanded="true" aria-controls="collapseАccreditation">
+                                    Аккредитация<span>Минспорта</span>
+                                </button>
+                                </h2>
+                                <div id="collapseАccreditation" class="accordion-collapse collapse show" aria-labelledby="headingАccreditation" data-bs-parent="#accordionАccreditation">
+                                    <div class="accordion-body accreditation-list">
+                                        <div class="label-radio-wrapp accreditation-list__item">
+                                            <input class="label-radio-wrapp__radio" type="radio" name="accreditation-type" id="accreditation-yes" checked> 
+                                            <label class="label-radio-wrapp__label" for="accreditation-yes">Да</label>
+                                        </div>
+                                        <div class="label-radio-wrapp accreditation-list__item">
+                                            <input class="label-radio-wrapp__radio" type="radio" name="accreditation-type" id="accreditation-no"> 
+                                            <label class="label-radio-wrapp__label" for="accreditation-no">Нет</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="button button-border mt-4">Сбросить все фильтры</button>
+
+                        <!-- <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="filters-background"></div> 
+                </aside> 
+                <!-- MAIN -->
+                <main class="content col-12 col-xl-9 p-0 pb-5">
+                    <div class="content-header d-none d-lg-flex flex-column flex-lg-row justify-content-between align-items-center-lg p-3 px-4">
+                        <div class="content-header__sorting sorting d-flex align-items-center">
+                            <div class="sorting__label">Сортировать</div>
+                            <div class="sorting__select select-wrapper sorting w-100 ms-0 ms-lg-4">
+                                <select class="selectpicker">
+                                    <option>Сортировка - 1</option>
+                                    <option>Сортировка - 2</option>
+                                    <option>Сортировка - 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="content-header__display-type display-type d-flex align-items-center">
+                            <div class="label-radio-wrapp display-type__item">
+                                <input class="label-radio-wrapp__radio" type="radio" name="display-type" id="display-type-map"> 
+                                <label class="label-radio-wrapp__label" for="display-type-map">Карта
+                                    <svg class="display-map" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M17.361,0a.643.643,0,0,0-.288.068L12.2,2.5,6.693.056c-.009,0-.019,0-.029-.008A.643.643,0,0,0,6.589.024.667.667,0,0,0,6.511.008a.956.956,0,0,0-.157,0,.667.667,0,0,0-.078.016A.643.643,0,0,0,6.2.047c-.01,0-.02,0-.029.008L.386,2.627A.643.643,0,0,0,0,3.215V17.357a.643.643,0,0,0,.9.588l5.525-2.456,5.525,2.456c.01,0,.02,0,.03.006a.568.568,0,0,0,.487-.011c.01,0,.022,0,.032-.007l5.143-2.571A.643.643,0,0,0,18,14.786V.643A.643.643,0,0,0,17.361,0ZM5.79,14.368l-4.5,2V3.632l4.5-2Zm5.786,2-4.5-2V1.632l4.5,2Zm5.143-1.979-3.857,1.929V3.612l3.857-1.929Z" transform="translate(-0.004 0)" fill="#bed0e2"/></svg>
+                                </label>
+                            </div>
+                            <div class="label-radio-wrapp display-type__item">
+                                <input class="label-radio-wrapp__radio" type="radio" name="display-type" id="display-type-list" checked> 
+                                <label class="label-radio-wrapp__label" for="display-type-list">Список
+                                    <svg class="display-list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><g transform="translate(-1517 -264)"><rect width="18" height="3" rx="1.5" transform="translate(1517 264)" fill="#bed0e2"/><rect width="18" height="3" rx="1.5" transform="translate(1517 271.5)" fill="#bed0e2"/><rect width="18" height="3" rx="1.5" transform="translate(1517 279)" fill="#bed0e2"/></g></svg>
+                                </label>
+                            </div>
+                            <div class="label-radio-wrapp display-type__item">
+                                <input class="label-radio-wrapp__radio" type="radio" name="display-type" id="display-type-blocks"> 
+                                <label class="label-radio-wrapp__label" for="display-type-blocks">Плиткой
+                                    <svg class="display-blocks" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><g transform="translate(-1629 -264)"><rect width="8" height="8" rx="2" transform="translate(1629 264)" fill="#fff"/><rect width="8" height="8" rx="2" transform="translate(1629 274)" fill="#fff"/><rect width="8" height="8" rx="2" transform="translate(1639 264)" fill="#fff"/><rect width="8" height="8" rx="2" transform="translate(1639 274)" fill="#fff"/></g></svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-objects-list display-list d-flex flex-column align-content-start flex-wrap p-4 pe-xl-0">
+                        <div class="content-objects-list__item object-block object-block-hor object-block-border mb-4">
+                            <div class="object-block__vip-label">vip</div>
+                            <div class="object-block-favorites-wrapp">
+                                <input class="object-block-favorites__checkbox" type="checkbox" name="checkbox-favorites" id="favorites-heart-obj-1"> 
+                                <label class="object-block-favorites__label" for="favorites-heart-obj-1">
+                                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0193 1.51891C13.832 0.483103 11.9106 2.06844 10.698 3.47532C10.1996 4.05355 9.2293 3.98927 8.7741 3.37645C7.62889 1.83468 5.62652 0.11665 3.16253 1.51891C-0.384959 3.5378 1.16251 7.51891 2.66253 9.51892C4.39799 11.8328 7.65041 14.4661 9.02416 15.5325C9.3952 15.8205 9.91428 15.7996 10.2743 15.498C11.8057 14.2151 14.4246 12.1044 16.1625 10.0189C18.9546 6.6684 19.5193 3.1764 16.0193 1.51891Z" stroke="#B7C2CC" stroke-width="3"/>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="row g-0">
+                                <div class="object-block__img col-4">
+                                    <img src="./resources/images/aqualife.jpg" alt="aqualife">
+                                </div>
+                                <div class="col object-block__content">
+                                    <div class="object-block__header p-4">
+                                        <div class="object-block__name fw-bold text-uppercase">AquaLife Спортивно-гостиничный комплекс</div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="object-block__location object-location">
+                                                <img class="object-location__flag" src="./resources/icons/russia-icon.svg" alt="russia-icon">
+                                                <div class="object-location__country">Краснодар</div>
+                                            </div>
+                                            <div class="object-block__add-info d-flex align-self-center">
+                                                <div class="object-rate d-flex align-self-center me-4">
+                                                    <div class="object-rate__stars d-flex">
+                                                        <img class="ms-1" src="./resources/icons/star.svg" alt="star">
+                                                        <img class="ms-1" src="./resources/icons/star.svg" alt="star">
+                                                        <img class="ms-1" src="./resources/icons/star.svg" alt="star">
+                                                        <img class="ms-1" src="./resources/icons/star.svg" alt="star">
+                                                        <img class="ms-1" src="./resources/icons/star.svg" alt="star">
+                                                    </div>
+                                                    <div class="object-rate__value ms-2 pt-1">
+                                                        4.8
+                                                    </div>
+                                                </div>
+                                                <div class="object-comments d-flex align-self-center">
+                                                    <img class="me-2" src="./resources/icons/comments.svg" alt="comments">
+                                                    <div class="object-comments__count pt-1">
+                                                        16
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="object-block__descr p-4">
+                                        Спортивно-гостиничный комплекс AquaLife находится в 
+                                        курортном поселке Калужская, в юго-восточной части Краснодарского края, 
+                                        в 24 км от Краснодара. Общая площадь территории — 40 000 кв.м.
+                                    </div>
+                                    <div class="object-block__footer d-flex justify-content-between flex-column flex-md-row p-4">
+                                        <div class="object-block__cost-block cost-block d-flex flex-column">
+                                            <div class="cost-block__label fw-bold fs-5">Цены от</div>
+                                            <div class="d-flex">
+                                                <div class="cost-block__value fs-2 fw-bold">2 500 <span class="fw-normal ms-1 fs-3">руб.</span></div>
+                                                <span class="d-flex align-items-center fs-5 ms-3 pt-1">в сутки с человека</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="button button-fill justify-content-center justify-content-md-start mt-3 mt-md-0">Запросить расчет
+                                            <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="27.176" height="27.176" viewBox="0 0 27.176 27.176"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M27.176,3.185A3.188,3.188,0,0,0,23.991,0H3.185A3.188,3.188,0,0,0,0,3.185V23.991a3.188,3.188,0,0,0,3.185,3.185H23.991a3.188,3.188,0,0,0,3.185-3.185Zm-2.123,0v9.342h-10.4V2.123h9.342A1.063,1.063,0,0,1,25.053,3.185ZM3.185,2.123h9.342v10.4H2.123V3.185A1.063,1.063,0,0,1,3.185,2.123ZM2.123,23.991V14.649h10.4v10.4H3.185A1.063,1.063,0,0,1,2.123,23.991Zm21.868,1.062H14.649v-10.4h10.4v9.342A1.063,1.063,0,0,1,23.991,25.053ZM4.176,7.325A1.061,1.061,0,0,1,5.237,6.263H6.263V5.237a1.062,1.062,0,1,1,2.123,0V6.263H9.412a1.062,1.062,0,1,1,0,2.123H8.386V9.412a1.062,1.062,0,1,1-2.123,0V8.386H5.237A1.061,1.061,0,0,1,4.176,7.325ZM17.624,6.6a1.061,1.061,0,0,1,1.5-1.5l.726.725.726-.725a1.061,1.061,0,0,1,1.5,1.5l-.725.726.725.726a1.061,1.061,0,0,1-1.5,1.5l-.726-.725-.726.725a1.061,1.061,0,0,1-1.5-1.5l.725-.726Zm-7.15,13.252a1.061,1.061,0,0,1-1.062,1.062H5.237a1.062,1.062,0,0,1,0-2.123H9.413A1.061,1.061,0,0,1,10.474,19.851ZM23,21.939A1.061,1.061,0,0,1,21.939,23H17.763a1.062,1.062,0,0,1,0-2.123h4.175A1.061,1.061,0,0,1,23,21.939Zm0-4.175a1.061,1.061,0,0,1-1.062,1.062H17.763a1.062,1.062,0,0,1,0-2.123h4.175A1.061,1.061,0,0,1,23,17.763Zm0,0"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-footer p-4">
+                        <div class="content-banner p-5">
+                            <h2 class="content-banner__title mb-4 fs-1 fw-bold">Лучшее предложение на рынке</h2>
+                            <a href="#" class="button button-fill button-white">К предложению</a>
+                        </div>
+
+                        <div class="content-footer d-flex justify-content-between w-100 pt-5">
+                            <ul class="pagination m-0">
+                                <li class="page-item disabled">
+                                    <span class="page-link d-flex justify-content-center align-items-center">
+                                        
+                                    </span>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link d-flex justify-content-center align-items-center" href="#">1</a>
+                                </li>
+                                <li class="page-item active" aria-current="page">
+                                    <span class="page-link d-flex justify-content-center align-items-center">2</span>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link d-flex justify-content-center align-items-center" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link d-flex justify-content-center align-items-center" href="#"></a>
+                                </li>
+                            </ul>
+                            <div class="count-pages d-flex align-self-center justify-content-end">
+                                <span class="count-pages__label d-flex align-self-center">Кол-во на странице</span>
+                                <div class="count-pages__select select-wrapper">
+                                    <select class="selectpicker">
+                                        <option>20</option>
+                                        <option>30</option>
+                                        <option>40</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>     
+            </div>
+        </div> 
+    </section>
+
+    <footer class="footer navbar p-0">
+        <div class="footer-top container-fluid  py-4 py-lg-5 px-0 ">
+            <a href="#" class=" d-lg-none m-auto">
+                <p>Спортбаза.РФ © 2021</p>
+            </a>
+            <div class="row container row-cols-4  mx-auto  d-none d-lg-flex text-start px-0">
+
+                <div class="col px-0">
+                    <p class=" fs-3 fw-normal">СПОРТБАЗА<span class="span">.РФ</span></p>
+                    <p class="opacity-5 fs-6" class=" fs-4 fw-bold">Единый реестр спортивной <br>
+                        инфраструктуры</p>
+                    <p class=" fs-3 fw-bold span pt-4"> 8 800 100-20-30</p>
+                    <p>sportbasa@sport.ru</p>
+                </div>
+                <div class="col px-0">
+                    <a class="nav-link px-0" href="#">
+                        <p>Каталог объектов 123</p>
+                    </a>
+                    <a class="nav-link px-0" href="#">
+                        <p>Тендеры</p>
+                    </a>
+                    <a class="nav-link px-0" href="#">
+                        <p>О проекте</p>
+                    </a>
+                    <a class="nav-link px-0" href="#">
+                        <p>Клиенты и отзывы</p>
+                    </a>
+                </div>
+                <div class="col ">
+                    <a class="nav-link px-0" href="#">
+                        <p>Новости</p>
+                    </a>
+                    <a class="nav-link px-0" href="#">
+                        <p>Контакты</p>
+                    </a>
+                </div>
+                <div class="col ">
+                    <a class="nav-link px-0" href="#">
+                        <p>Мы в соц.сетях</p>
+                    </a>
+                    <div class="socialButton row row-cols-auto pt-2">
+                        <a href="#" class="col">
+                            <div class="socialButton__facebook rounded d-inline-block text-center"><img
+                                    src="./resources/icons/facebookWhite.png" alt="F"
+                                    class="w-auto h-auto align-text-top "></div>
+                        </a>
+                        <a href="#" class="col"><img src="./resources/icons/odnoklassniki.svg" alt="O" class="socialButton__odnoklassniki"></a>
+                        <a href="#" class="col"><img src="./resources/icons/instagram.png" alt="G" class="socialButton__gmail"></a>
+                        <a href="#" class="col"><img src="./resources/icons/vk.svg" alt="VK" class="socialButton__vk"></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom container-fluid  py-4 py-lg-5 px-0">
+            <div class="row container row-cols-1 row-cols-lg-4  mx-auto p-0">
+                <a href="#" class="col d-lg-flex d-none px-0 ">
+                    <p> Спортбаза.РФ © 2021</p>
+                </a>
+                <a href="#" class="col d-lg-flex d-none px-0">
+                    <p class="opacity-7">Правила пользования</p>
+                </a>
+                <a href="#" class="col d-lg-flex d-none px-0">
+                    <p class="opacity-7">Правила платформы</p>
+                </a>
+                <a href="#" class="col d-lg-flex d-none px-0">
+                    <p class="opacity-7">Политика конфиденциальности</p>
+                </a>
+                <p class="footer__comment  d-lg-none col px-0 ">"Искусство быть первыми"</p>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+    
+
+    
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

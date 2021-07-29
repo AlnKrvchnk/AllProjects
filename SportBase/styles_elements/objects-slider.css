@@ -1,0 +1,72 @@
+#slider-object {
+  height: 420px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d; }
+  #slider-object [type=radio] {
+    display: none; }
+  #slider-object label.slider-object__item {
+    padding-left: 0; }
+  #slider-object .slider-object__item {
+    margin: auto;
+    width: 660px;
+    height: 420px;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.7s ease; }
+    #slider-object .slider-object__item::before, #slider-object .slider-object__item::after {
+      display: none; }
+  #slider-object .slide__img {
+    border-radius: 20px;
+    height: 101%;
+    width: 101%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+    #slider-object .slide__img img {
+      height: auto;
+      width: 100%; }
+  #slider-object .slide__name {
+    position: absolute;
+    bottom: -30px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    background-color: #fff;
+    padding: 20px; }
+    #slider-object .slide__name p, #slider-object .slide__name span {
+      color: #0B3158;
+      margin: 0;
+      margin-left: 15px; }
+  #slider-object .slide__logo {
+    height: 30px; }
+    #slider-object .slide__logo img {
+      height: 100%;
+      width: auto; }
+
+#object-1:checked ~ #obj-1, #object-2:checked ~ #obj-2,
+#object-3:checked ~ #obj-3 {
+  box-shadow: 0 3px 20px 0 rgba(3, 15, 28, 0.3);
+  transform: translate3d(0, 0, 0); }
+
+#object-3:checked ~ #obj-1 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(25%, 0%, -200px); }
+
+#object-1:checked ~ #obj-2, #object-2:checked ~ #obj-3 {
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.3);
+  transform: translate3d(25%, 0%, -200px); }
+
+#object-2:checked ~ #obj-1,
+#object-3:checked ~ #obj-2 {
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.3);
+  transform: translate3d(60%, 0%, -500px); }
+
+#object-1:checked ~ #obj-3 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(60%, 0%, -500px); }
