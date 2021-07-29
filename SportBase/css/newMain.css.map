@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/newMain.scss"
-    ],
-    "names": [],
-    "file": "newMain.css"
-}
