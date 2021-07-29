@@ -1,0 +1,29 @@
+.itClub__item {
+  border-bottom: 1px solid rgba(162, 174, 186, 0.3);
+}
+
+.itClub__item .img {
+  border-radius: 5px;
+  width: 100%;
+  max-height: 160px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.itClub__item .img img {
+  width: 100%;
+}
+
+.itClub__item-bottom .subscribes__count:before {
+  vertical-align: sub;
+  padding-right: 10px;
+  content: url("../resource/icons/subscribes__count-light.svg");
+}
+
+.itClub__item-bottom .docs__count:before {
+  padding-right: 10px;
+  padding-left: 24px;
+  vertical-align: sub;
+  content: url("../resource/icons/docs__count-light.svg");
+}
+/*# sourceMappingURL=itClub.css.map */

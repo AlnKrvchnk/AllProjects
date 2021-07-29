@@ -1,0 +1,45 @@
+@import '../scss/variables.scss';
+
+.search-wrapper{
+    position: relative;
+}
+
+input[type = text], 
+input[type = email], 
+input[type = password], 
+input[type = tel], 
+textarea{
+    
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid $border;
+    padding: 16px 25px;
+    font-size: 21px;
+    font-weight: 400;
+    transition: .3s;
+
+    &:focus{
+        border-color: $light-blue;
+    }
+}
+
+.input-block{
+    position: relative;
+
+    input, textarea{
+        width: -webkit-fill-available;
+    }
+
+
+    label{
+        position: absolute;
+        padding: 0 10px;
+        padding-bottom: 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: $dark-blue;
+        background-color: #fff;
+        top: -14px;
+        left: 15px;
+    }
+}

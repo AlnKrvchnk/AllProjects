@@ -1,0 +1,407 @@
+@import '../scss/variables.scss';
+
+.labels {
+   
+
+
+    &__new{
+        position:absolute;
+        top: 35px;
+    right: 230px;
+    }
+    &_type {
+        display: inline-block;
+        width: max-content;
+        padding: 8px 14px;
+        border-radius: 50px;
+        align-items: center;
+        margin: 0;
+        line-height: 14px;
+
+
+        &:before {
+            content: '';
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+
+        }
+
+        &:after {
+            vertical-align: top;
+            line-height: 18px;
+            font-size: 12px;
+
+        }
+
+        &.new {
+            background: $green1;
+
+            &:before {
+                background-image: url($icon+'new.svg');
+                width: 3px;
+                background-size: 3px 16px;
+
+            }
+
+            &:after {
+                color: $green6;
+                content: "Новое";
+                font-size: 14px;
+            }
+
+        }
+
+        &.practice {
+            background: $blue1;
+
+            &:before {
+                background-image: url($icon+'practice.svg');
+
+            }
+
+            &:after {
+                color: $blue6;
+                content: "Практика";
+            }
+
+        }
+
+        &.news {
+            background: $orange1;
+
+            &:before {
+                background-image: url($icon+'news.svg')
+            }
+
+            &:after {
+                color: $yellow6;
+                content: "Новость";
+            }
+
+        }
+
+        &.announcement {
+            background: $green1;
+
+            &:before {
+                background-image: url($icon+'announcement.svg')
+            }
+
+            &:after {
+                color: $green6;
+                content: "Объявление";
+            }
+
+        }
+
+        &.events {
+            background: $yellow1;
+
+            &:before {
+                background-image: url($icon+'events.svg')
+            }
+
+            &:after {
+                color: $orange6;
+                content: "Мероприятие";
+            }
+
+        }
+
+        &.design {
+            background: $violet1;
+
+            &:before {
+                background-image: url($icon+'design.svg')
+            }
+
+            &:after {
+                color: $violet6;
+                content: "Дизайн";
+            }
+
+        }
+
+        &.programming {
+            background: $blue1;
+
+            &:before {
+                background-image: url($icon+'programming.svg')
+            }
+
+            &:after {
+                color: $blue6;
+                content: "Программирование";
+            }
+
+        }
+
+        &.administration {
+            background: $teal1;
+
+            &:before {
+                background-image: url($icon+'administration.svg')
+            }
+
+            &:after {
+                color: $teal6;
+                content: "Администрирование";
+            }
+
+        }
+
+        &.vacancy {
+            background: $blue1;
+
+            &:before {
+                background-image: url($icon+'vacancy.svg')
+            }
+
+            &:after {
+                color: $blue6;
+                content: "Вакансия";
+            }
+
+        }
+
+        &.for_masters {
+            background: $red1;
+
+            &:before {
+                background-image: url($icon+'for_masters.svg')
+            }
+
+            &:after {
+                color: $red6;
+                content: "Для магистров";
+            }
+
+        }
+
+        &.extramural {
+            background: $grey2;
+
+            &:before {
+                background-image: url($icon+'extramural.svg')
+            }
+
+            &:after {
+                color: $black6;
+                content: "Заочная форма";
+            }
+
+        }
+
+        &.full-time {
+            background: $green3;
+
+            &:before {
+                background-image: url($icon+'full-time.svg')
+            }
+
+            &:after {
+                color: $green6;
+                content: "Очная форма";
+            }
+
+        }
+        &.cplus{
+            background: #F8FCFF;
+            box-shadow: 0px 10px 40px rgba(150, 87, 231, 0.3);
+            border-radius: 10px;
+           padding: 18px 30px;
+           &:before{
+            content:none;}
+            &:after{
+                content:"";
+                background-image: url($icon+"cplus.svg");
+                width: 40px;
+                height: 45px;
+                display: inline-block;
+
+            }
+        }
+        &.dotnet{
+            &:before{
+                content:none;}
+            background: #F8FCFF;
+            box-shadow: 0px 10px 40px rgba(0, 133, 255, 0.3);
+            border-radius: 10px;
+           padding: 14px 20px;
+            &:after{
+                content:"";
+                background-image: url($icon+"dotnet.svg");
+                width: 32px;
+                height: 12px;
+                display: inline-block;
+
+            }
+        }
+        &.vue{
+            &:before{
+                content:none;}
+            background: #F8FCFF;
+            box-shadow: 0px 10px 40px rgba(65, 184, 131, 0.3);
+            border-radius: 10px;
+           padding: 14px 20px;
+            &:after{
+                content:"";
+                background-image: url($icon+"vue.svg");
+                width: 33px;
+                height: 29px;
+                display: inline-block;
+
+            }
+        }
+        &.css{
+            &:before{
+                content:none;}
+            background: #F8FCFF;
+            box-shadow: 0px 10px 40px rgba(231, 83, 0, 0.3);
+            border-radius: 10px;
+            padding: 10px 16px;
+            &:after{
+                content:"";
+                background-image: url($icon+"css.svg");
+                width: 14px;
+                height: 13px;
+                display: inline-block;
+
+            }
+        }
+        &.donnu{
+                    padding:0;
+                    width: 100%;
+                    &.small{
+                        &:after{height: 85px;}
+        height: 85px;
+                    }
+                    &.large{
+                        &:after{height: 95px;}
+                        height: 95px;
+                    }
+            &:before{
+                content:none;}
+           
+            &:after{
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                content:"";
+                background-image: url($icon+"donnu.png");
+                width: 100%;
+                display: inline-block;
+
+            }
+        }
+        &.facult{
+            
+            padding:0;
+            width: 100%;
+            &.small{
+                &:after{height: 85px;}
+height: 85px;
+            }
+            &.large{
+                &:after{height: 95px;}
+                height: 95px;
+            }
+            &:before{
+                content:none;}
+            
+            &:after{
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                content:"";
+                background-image: url($icon+"fiz-teh.png");
+                width: 100%;
+                
+                display: inline-block;
+
+            }
+        }
+        &.video{
+            background: $lightermain;
+            border-radius: 0;
+            
+            &.small{
+                padding: 20px;
+                &:after{
+                    background-size: 50px;
+    background-position-y: -4px;
+                    width: 38px;
+                    height: 38px;;
+                }
+            }
+            &.large{
+                padding: 30px;
+                &:after{
+                    background-size: 105px;
+                    background-position-y: -10px;
+                    width: 70px;
+                    height: 70px;
+                    
+                }
+            }
+            &:before{
+                content:none;}
+
+           
+            
+            &:after{
+                background-position: center;
+                border-radius: 50%;
+                content:"";
+                background-image: url($icon+"video.svg");
+               
+                display: inline-block;
+                
+
+            }
+        }
+        &.image{
+            background: $lightermain;
+            border-radius: 0;
+            
+            &.small{
+                padding: 20px;
+                &:after{
+                    background-size: 50px;
+    background-position-y: -4px;
+                    width: 33px;
+                    height: 33px;;
+                }
+            }
+            &.large{
+                padding: 30px;
+                &:after{
+                    background-size: 105px;
+                    background-position-y: -10px;
+                    width: 70px;
+                    height: 70px;
+                    
+                }
+            }
+            &:before{
+                content:none;}
+
+           
+            
+            &:after{
+                background-position: center;
+                border-radius: 10%;
+                content:"";
+                background-image: url($icon+"image.svg");
+               
+                display: inline-block;
+                
+
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import '../scss/variables.scss';
+
+.shedule {
+    :nth-last-child(1){
+        margin-bottom: 0;
+    }
+    &__item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+        box-shadow:(0px 4px 4px rgba(0, 163, 255, 0.08));
+        border: 1px solid $lightermain;
+        .content {
+            padding: 16px 20px;
+            background: white;
+
+            .lesson {
+                vertical-align: super;
+
+                &__title {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
+                &__type {
+                    color: $gray;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .class {
+            padding: 16px 20px;
+            background: $lightermain;
+
+            span {
+                font-weight: bold;
+                font-size: 16;
+
+                &:after {
+                    font-weight: normal;
+                    font-size: 14px;
+                    content: "пара";
+                    display: block
+                }
+            }
+        }
+    }
+}

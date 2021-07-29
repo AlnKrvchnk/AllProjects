@@ -1,0 +1,540 @@
+@import '../scss/variables.scss';
+.border-green{
+border-color: #56C46F;
+}
+.button-blueBorder {
+    background: $light-blue;
+    &.button{
+        &:hover,&:active,&.active{
+            border: $light-blue 1px solid;
+            background-color: white;
+            color: $light-blue;
+            & p{color: $light-blue!important;}
+        }
+    }
+}
+.text-lightBlue{color:$light-blue}
+.border-lightBlue{ border-color:$light-blue}
+.border-red{
+    border: $red 1px solid;}
+.button-red{
+    border: $red 1px solid;
+    & p{color: $red;}
+    
+    &:active,&:hover,&.active{
+background: $red;
+border-color: white;
+& p{color: white;}
+    }
+}
+
+.content__tenderCatalog {
+
+    
+    & .dropdown-toggle {
+        &.page{
+            &:after {
+                content: "";
+        }}
+        &:after {
+            content: url("../resources/icons/selectArow.svg");
+            border-top: none;
+            position: absolute;
+            right: 10px;
+
+
+        }
+    }
+
+    & .dropdown-menu {
+        transform: translate3d(0, 50px, 0) !important;
+    }
+
+    & .inputInf {
+        height: 50px;
+        padding: 10px;
+        padding-left: 20px;
+        opacity: 0.7;
+        line-height: 32px;
+        &:active,
+        &:hover,
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    & p {
+        font-size: 18px;
+
+        @media(max-width:991px) {
+            font-size: 14px;
+        }
+    }
+
+    & .top {
+        background: linear-gradient(to top, rgba(45, 41, 125, 1), rgba(45, 41, 125, 0)), url("../resources/images/tenderCatalog/background.png");
+        background-size: cover;
+
+        &__title {
+            font-size: 40px;
+
+            @media(max-width:991px) {
+                font-size: 24px;
+            }
+        }
+
+        &__button {
+            & p {
+                font-size: 24px;
+
+                @media(max-width:991px) {
+                    font-size: 15px;
+                }
+
+                &:after {
+                    @media(min-width: 400px) {
+                        content: url("../resources/icons/list.svg");
+
+                        margin-left: 20px;
+                        padding-right: 9px;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        border-radius: 10px;
+                        height: 15px;
+                        width: 15px;
+                        position: relative;
+                        padding-bottom: 4px;
+                        padding-left: 11px;
+                        padding-top: 12px;
+
+                    }
+                }
+            }
+        }
+
+        &__text {
+
+            font-size: 22px;
+
+            @media(max-width:991px) {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    & .middle {
+        & .wrapper{
+            background: white;
+            padding-right: 40px;
+            @media(max-width:991px) {
+                padding-right: 42px;
+                padding-left: 42px;
+                background: #f8f9fa;
+                
+            }
+        }
+        & .filters__sortby {
+            width: fit-content;
+        }
+       
+        & .options {
+            height: fit-content;
+            padding-left: calc((100vw - 1320px)/2);
+
+            @media(min-width:991px) {
+                width: 30vw;
+            }
+
+            @media(min-width: 1200px)and (max-width:1400px) {
+
+                padding-left: calc((100vw - 1140px)/2);
+            }
+
+            @media(min-width: 992px) and (max-width:1200px) {
+                padding-left: calc((100vw - 960px)/2);
+            }
+
+            @media(max-width: 992px) {
+                padding: 0;
+                width: 100%;
+            }
+
+            & .products {
+                div{
+                    height: 50px;
+                    align-items: center;
+                }
+                &.show {
+                    z-index: 20;
+                    position: absolute;
+                    top: 0px;
+                    padding-right: 40px;
+                    padding-left: 40px;
+                    padding-top: 95px!important;
+                    left: 0;
+                }
+            }
+
+            & .search {
+                &:after {
+                    content: url("../resources/icons/find.svg");
+                    margin-left: -40px;
+                    vertical-align: middle;
+                }
+
+                &__input {
+
+                    padding-left: 20px;
+                    padding-right: 40px;
+
+                }
+
+            }
+
+            & .filters {
+                &__all {
+                    padding-left: 10px;
+                    padding-right: 0px;
+                }
+
+                &__Menu {
+                    background: none;
+
+                    &__options {
+                        display: none;
+                        & .inputWrapper{
+                            &:nth-child(1){
+                            padding-right: 5px;
+                            padding-left: 0px;
+                        }
+                        &:nth-child(2){
+                            padding-right: 0px;
+                            padding-left: 5px;
+                        }
+                        }
+                    }
+
+                    &__trigger {
+                        background-color: white;
+                        border: 1px solid #BAC4DF;
+                        border-radius: 10px;
+                        width: 50px;
+                        height: 50px;
+
+                        &::after {
+                            content: url("../resources/icons/settings.svg");
+                        }
+                    }
+
+
+                    &.show {
+                        & .filters__Menu__options {
+                            display: block;
+                        }
+
+                        & .filters__Menu__trigger {
+                            background: $light-blue;
+                            right: 0;
+                            margin-left: auto;
+                            display: block;
+
+                            &::before {
+                                content: "Выберите фильтры";
+                                font-size: 21px;
+                                position: absolute;
+                                left: 40px;
+                                color: $textBlue;
+                            }
+
+                            &::after {
+                                content: url("../resources/icons/close.svg");
+                            }
+                        }
+
+                        background-color: white;
+                        position: fixed;
+                        top: 0;
+                        padding:40px;
+                        padding-top: 150px;
+
+                        left: 0;
+                        z-index: 10;
+                        min-height: 100vh;
+                        width: 100vw;
+
+                    }
+                }
+
+
+
+
+
+
+            }
+        }
+        
+        & .content{
+            @media(min-width: 991px){
+                width: 70vw;
+                }
+                @media(max-width: 992px) {
+                    padding: 0;
+                    width: 100%;
+                }
+
+            &__wrapper{
+                
+                padding-right: calc((100vw - 1320px)/2);
+                @media(min-width: 991px){
+                    padding-left: 40px;}
+            
+
+            @media(min-width: 1200px)and (max-width:1400px) {
+
+                padding-right: calc((100vw - 1140px)/2);
+            }
+
+            @media(min-width: 992px) and (max-width:1200px) {
+                padding-right: calc((100vw - 960px)/2);
+            }
+            @media(max-width: 992px) {
+                padding: 0;
+                width: 100%;
+            }
+            
+            & .tenders{
+                & .tenderNumberBlock{
+                    @media(min-width: 992px) {
+                        border:none
+                    }
+                }
+                &__el{
+                    & p{
+                        width: fit-content;
+                    }
+                   
+                    &__title{
+                        display: flex;
+                        @media (max-width:1480px) 
+                        {
+                            display: block;
+                            
+                        }
+                        & .userImage{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                    }
+                    &__sportType{
+                        & .type{
+                          
+                            &::before{
+                                
+                                content:"Вид спорта";
+                                font-weight: bold;
+                                font-size: 18px;
+                                padding-right: 20px;
+
+        @media(max-width:991px) {
+            font-size: 14px;
+        }
+                            }
+                        }
+                    }
+                    &__region{
+                        & .region{
+                            &::before{
+                                width: 80px;
+                               display: inline-flex;
+                                content:"Регион";
+                                font-weight: bold;
+                                font-size: 18px;
+                               
+
+        @media(max-width:991px) {
+            font-size: 14px;
+        }
+                            }
+                        }
+                    }
+                    &__price{
+                        & *{
+                            &::before{
+                               width: 80px;
+                               display: inline-flex;
+                                font-weight: bold;
+                                font-size: 18px;
+                                
+
+        @media(max-width:991px) {
+            font-size: 14px;
+        }
+                        }}
+
+                        }
+                        & .priceMin{ &::before{
+                            content:"стоимость за человека от";
+                            width: fit-content
+                            ;
+
+                            @media(max-width:991px) {
+                                content:"Стоимость   от";
+                                width: 80px;
+                               display: inline-flex;
+                            }
+                    }}
+                        & .priceMax{ &::before{
+                            content:"до";
+                            width: fit-content;
+                            padding:0;
+                            
+                    }}
+                        & .peopleCount{
+                            &::before{
+                                content:"Человек";
+                                
+                        }
+                    }
+                    &__date{
+                        & .date {
+                            &::before{
+                                width: 80px;
+                               display: inline-flex;
+                                content:"Дата";
+                                font-weight: bold;
+                                font-size: 18px;
+                               
+
+        @media(max-width:991px) {
+            font-size: 14px;
+        }
+                            }
+                        }
+                    }
+                    
+                    &__comment{
+                        & .requiment{
+                            &:before{
+                            content:"Требования";
+                            font-weight: bold;
+                            font-size: 18px;
+                           
+
+    @media(max-width:991px) {
+        font-size: 14px;
+    }}
+                        }
+                        & .comment{ &:before{
+                            content:"Комментарий";
+                            font-weight: bold;
+                            font-size: 18px;
+                           
+
+    @media(max-width:991px) {
+        font-size: 14px;
+    }}
+                        }
+                        & .wrapper{
+                            @media (max-width:991px) {
+                               width: 100%;
+                            }
+                        }
+                        & .responce{
+                            @media (max-width:991px) {
+                                display: block!important;
+                                margin:auto;
+                                width: 100%;
+                                &::before{
+                                   
+                                    position: absolute;
+                                    left: 30px;
+                                    
+                                    
+                                }
+                                &::after{
+                                    
+                                    display: block;
+        text-align: end;
+                                    
+                                }
+                                
+                            }
+                           
+                            &::before{
+                                content:"Откликнуться";
+                                
+                                
+                                
+                            }
+                            &:active,&:hover,&.active{
+                                background-color: #79CB8C;
+                                border: 1px solid #309848;
+                                &::before{
+                                content:"Мой отклик";
+                            }}
+                            &::after{
+                                content:url("../resources/icons/email.svg");
+                              padding-left: 20px;
+                                
+                            }
+                            
+                                
+                            
+                        }
+                        & .responceCount{
+                            & p{padding-top:10px;
+                                padding-bottom:10px;
+                            }
+                            &::before{
+                                content:"количество откликов";
+                                color:$textBlue;
+                                padding-right: 15px;
+                                
+                            }
+                            @media(max-width:991px) {
+                                &::before{
+                                    content:none;
+                                    
+                                }
+                                &::after{
+                                    content:"количество откликов";
+                                    color:$textBlue;
+                                    padding-left: 10px;
+                                    
+                                }
+                            }
+
+                        }
+                        & .trigger{
+                            &::before{
+                                content:"Открыть полное описание";
+                                color:white;
+                                
+                            }
+                            &::after{
+                                content:url("../resources/icons/selectArowWhite.svg");
+                                padding-left: 15px;
+                                @media(max-width:991px)
+                                {
+                                    padding-left: 5px;
+                                }
+                            }
+                            &:active,&:hover,&.active{
+                                &::before{
+                                content:" Закрыть полное описание";
+                                color:$light-blue;
+                            }
+                            &::after{
+                                content:" ";}
+                        }
+                        }
+                    }
+                }
+            }
+            }
+    
+        }
+    }
+
+}

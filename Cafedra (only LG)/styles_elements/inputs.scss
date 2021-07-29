@@ -1,0 +1,39 @@
+@import '../scss/variables.scss';
+.input{
+    background: #F7F7F7;
+border-radius: 5px;
+font-size: 16px;
+line-height: 24px;
+
+border:none;
+outline: none;
+width: fit-content;
+&::placeholder{
+    color: #A0A7B5;
+}
+&__wrapper{
+    padding: 14px 20px;
+}
+&:focus {
+    color:$title;
+}
+    &__search{
+       
+        
+        &-wrapper{
+&:before{
+    content: '';
+    background-image: url($icon+'search.svg');
+    width: 12px;
+    margin-right: 10px;
+    background-size: 12px 13px;
+    height: 13px;
+    display: inline-block;
+    
+}
+&:focus{
+    &:before{
+    background-image: url($icon+'search__active.svg');}
+}}
+    }
+}

@@ -1,0 +1,40 @@
+@media (min-width: 1450px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1400px; } }
+@media (max-width: 1200px) {
+  .nav-indicator {
+    display: none; }
+
+  .navbar-nav {
+    margin-top: 30px; }
+  .navbar-buttons {
+    margin-top: 40px;
+    flex-direction: row-reverse;
+    justify-content: flex-end; }
+    .navbar-buttons .wrapp-buttons {
+      flex-direction: row-reverse; }
+    .navbar-buttons .button {
+      margin-left: 0;
+      margin-right: 15px; }
+      .navbar-buttons .button:first-child {
+        margin: 0; }
+  .navbar .button-toggle {
+    display: none; } }
+@media (max-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+    padding-right: 40px;
+    padding-left: 40px; }
+
+  .navbar .wrapp-buttons {
+    margin-bottom: 15px; }
+  .navbar-buttons {
+    flex-direction: column; }
+    .navbar-buttons .button {
+      margin: 0;
+      width: 100%;
+      margin-right: 15px; }
+      .navbar-buttons .button-icon {
+        width: max-content; }
+      .navbar-buttons .button:first-child {
+        margin-right: 0; } }

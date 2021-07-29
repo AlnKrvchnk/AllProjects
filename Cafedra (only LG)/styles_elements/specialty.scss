@@ -1,0 +1,27 @@
+@import '../scss/variables.scss';
+.specialty
+{
+    &__bottom{
+        img{
+           
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        >div{
+            padding: 0 30px;
+            width: 30%;
+        }
+        
+    }
+    &__top{
+        padding: 0 30px 125px;
+        .image{
+            img{
+                padding-left:50px;
+                margin-right: 0;
+                margin-left: auto;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@import '../scss/variables.scss';
+.text-Blue{
+    color:$textBlue;
+}
+.content__compareObjects{
+  
+& .content{
+    width: 100vw;
+        @media(min-width: 1200px)and (max-width:1400px){
+            margin-left: calc((100vw - 1140px)/2);
+        }
+        @media(min-width: 992px) and (max-width:1200px){
+            margin-left: calc((100vw - 960px)/2);
+        }
+        @media(max-width: 992px){
+            margin:0;
+        }
+        margin-left: calc((100vw - 1320px)/2);}
+    & p:after{
+        vertical-align: text-top;
+        margin-left: 20px;
+    }
+    & .compareObjects_owl{
+        
+        & .owl-nav{
+            
+            @media(min-width:991px){
+                display: none;
+            }
+           &:nth-last-child(2) {
+               z-index: 10;
+            top: 15px;
+            position: absolute;
+            width: 100%;
+            left: 0;
+           }
+            & button{
+                background: white;
+                border-radius: 10px;
+                &.owl-next{
+                    right: 10px;
+                    left: auto;
+                }
+                
+                left: 10px;
+                bottom:-10px;
+            }
+        }
+        & .owl-dots{
+            @media(min-width:991px){
+                display: none;
+            }
+        &:nth-last-child(1){
+            top: 0;
+            position: absolute;
+            width: 100%;
+           }}
+    }
+    & .item{
+    & .country__name{
+        color:$light-blue
+    }
+    & .anotherObjects__price{
+width: 290px;
+
+    }
+    & .informationBlocks__content__block__price__el .button::before{
+        content:"Запросить расчет";
+    }
+
+}
+    & .top{
+        &__button{
+            & p{
+                padding-right:40px;
+            
+            }
+           
+            &.backFavorites{
+               &:hover,&:active,&.active {
+                    & p:after{
+                       
+                        content:url("../resources/icons/likeBlue.svg");
+                }}
+background: $light-blue;
+& p:after{
+    position: absolute;
+    right: 0;
+    line-height: 35px;
+    content:url("../resources/icons/likeWhite.svg");
+    
+}
+            }
+            &.delete, & .delete{
+                & p:after{
+                    position: absolute;
+               right: 0;
+               line-height: 35px;
+    content:url("../resources/icons/delete.svg")
+                }
+                border:$red 1px solid;
+                
+                &__countObjects{ 
+                    margin-left:10px;
+                    color:$red;}
+
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,98 @@
+input.radio {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+input.radio:checked + label::before {
+  background: #E45868;
+}
+
+.inputBlock__mail, .inputBlock__password {
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  background: #FAFAFA;
+  border-radius: 10px;
+}
+
+.inputBlock__mail::-webkit-input-placeholder, .inputBlock__mail, .inputBlock__password::-webkit-input-placeholder, .inputBlock__password {
+  color: #0B3158;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.inputBlock__mail:-ms-input-placeholder, .inputBlock__mail, .inputBlock__password:-ms-input-placeholder, .inputBlock__password {
+  color: #0B3158;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.inputBlock__mail::-ms-input-placeholder, .inputBlock__mail, .inputBlock__password::-ms-input-placeholder, .inputBlock__password {
+  color: #0B3158;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.inputBlock__mail::placeholder, .inputBlock__mail, .inputBlock__password::placeholder, .inputBlock__password {
+  color: #0B3158;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.label-circl {
+  position: relative;
+  padding-left: 35px;
+}
+
+.label-circl.agreeRules::before {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  top: 30%;
+  background: #E45868;
+}
+
+.label-circl::before {
+  content: "";
+  background: white;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+}
+
+@media (max-width: 768px) {
+  input {
+    width: auto;
+    margin: 0;
+    height: 55px;
+  }
+  input, input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  input, input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  input, input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  input, input::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .inputBlock__radioButton__text {
+    width: 450px;
+  }
+}
+/*# sourceMappingURL=input.css.map */

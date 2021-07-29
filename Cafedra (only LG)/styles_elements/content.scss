@@ -1,0 +1,154 @@
+@import '../scss/variables.scss';
+
+.z-index {
+    &-2 {
+        z-index: 2;
+        position: relative;
+    }
+
+    &-3 {
+        z-index: 3;
+    }
+}
+
+.block {
+    &__aboutCafedra,&__allteachers{
+        padding:60px ;
+    }
+    &__zavCaf,&__specialty{
+        li{
+            margin-bottom: 16px;
+            display: flex;
+            p{
+                margin: 0;
+                display: inline-block;
+            }
+            &::before{
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-right: 20px;
+                background-image: url($icon+'profession.svg');
+                content: "";
+                width: 11px;
+                height: 15px;
+                display: inline-block;
+                background-position-x: center;
+                background-size: 30px;
+                background-position-y: -5px;
+                vertical-align: middle;
+            }
+        }
+    }
+     &__zavCaf{
+         a:not(.more){
+             text-decoration: underline;
+             text-decoration-color: $main;
+         }
+        padding:60px ;
+    }
+&__specialty{
+    padding:  60px 30px ;
+}
+    &__gallery {
+
+        padding: 30px 0px 100px 30px;
+    }
+    &__anotherInform {
+        padding: 30px 0px;
+       
+    }
+    &__footer, &__askStudent{
+        padding: 30px;
+    }
+
+    &__askStudent {
+        margin: 32px 32px 0 32px;
+    }
+
+    &__profile {
+        padding: 30px
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__shortinformation {
+        justify-content: space-between;
+
+        &-news {
+            margin: 30px;
+            margin-bottom: 70px;
+        }
+
+        &-schedule,
+        &-itClub {
+            padding: 30px;
+            max-width: 25vw;
+        }
+    }
+}
+
+.weekType {
+    vertical-align: sub;
+    display: inline-block;
+
+    span {
+        margin: 2px;
+        display: block;
+        height: 8px;
+        width: 23px;
+        background: $lightermain;
+
+        &.active {
+            background: $main;
+        }
+    }
+}
+
+.more {
+    display: block;
+
+    * {
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        >div {
+            transform: translateX(3px) rotate(-95deg);
+
+        }
+
+        >span {
+
+            transform: translateX(-3px);
+            display: inline-block;
+            margin-right: 0px;
+           
+            text-decoration-color: $darkmain;
+        }
+
+
+        span {
+
+            color: $darkmain;
+
+            &[class^="arrow__"] {
+                background: $darkmain;
+            }
+
+        }
+
+
+    }
+
+    >span {
+
+        vertical-align: sub;
+
+    }
+
+    cursor: pointer;
+}

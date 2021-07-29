@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEA,aAFa,CACT,SAAS,AACZ,QAAQ,CAAA;EACT,OAAO,EAAC,EAAE;EACV,gBAAgB,EAAE,KAAK;EACvB,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,YAAY;CACpB",
+    "sources": [
+        "../styles_elements/aboutCafedra.scss"
+    ],
+    "names": [],
+    "file": "aboutCafedra.css"
+}
